@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "epoasHyXuT96opRODSR/4a9GzMVZCL/3LAkQdCGY9JlObzVzcFq8HoPtaMy3csgCEAE2hb55GYcJxN9TmFHLqw==",
+  "dgSpecHash": "6gzL5Ppcb1BExUoL+ZfZyQtUT7I1joOej7etESoXnAMlg6uXJmllUu5v6hKHdeiqqjaTgp8/WDaV8zcHmNk2QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maksim\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512"
+  ],
   "logs": []
 }

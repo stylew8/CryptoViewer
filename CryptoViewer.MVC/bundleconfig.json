@@ -1,0 +1,11 @@
+﻿[
+  {
+    "outputFileName": "wwwroot/lib/lightweight-charts/lightweight-charts.js",
+    "inputFiles": [
+      "node_modules/lightweight-charts/dist/lightweight-charts.standalone.production.js"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  }
+]
