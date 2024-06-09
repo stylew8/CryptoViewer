@@ -11,5 +11,8 @@
   "description": "",
   "dependencies": {
     "lightweight-charts": "4.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.4.0"
   }
 }
