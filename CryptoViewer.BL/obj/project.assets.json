@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Maksim\\.nuget\\packages\\": {}
+    "C:\\Users\\vania\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+      "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
       "projectName": "CryptoViewer.BL",
-      "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
-      "packagesPath": "C:\\Users\\Maksim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+      "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+      "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Maksim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,11 +40,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -66,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.421\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
