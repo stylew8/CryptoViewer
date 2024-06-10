@@ -4,6 +4,10 @@
   },
   "language": {
     "feature": "en-us"
+  },
+  "specFlow": {
+    "unitTestProvider": {
+      "name": "nunit"
+    }
   }
 }
-
