@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5aoG/LuHL3/2WO0X/5LmS+wkdbD+31/omG8INXjgHBR5UPUvCu4y3p1YMVrg7UetFELAWhzrls92hpcoEg3THQ==",
+  "dgSpecHash": "7dGh+CZpeTmYjednQQMu4k3B9nw58wf3CfCQLrQuhUzHmwdZHWe4ev6ZAvnxGVY8rGfW40ujHeh5Yj7hZ7Ie5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kristupas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\kristupas\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\kristupas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
+  ],
   "logs": []
 }
