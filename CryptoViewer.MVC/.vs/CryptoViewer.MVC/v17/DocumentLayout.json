@@ -1,65 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\",
+  "WorkspaceRootPath": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\ethchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\js\\ethchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\btcchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\js\\btcchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\price.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\js\\price.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\views\\chart\\bitcchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\views\\chart\\bitcchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:views\\chart\\bitcchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\views\\chart\\ethchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\views\\chart\\ethchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:views\\chart\\ethchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\ethchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\js\\ethchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\btcchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\js\\btcchart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\price.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\js\\price.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\controllers\\chartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\controllers\\chartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:controllers\\chartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\bundleconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\bundleconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:bundleconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\maksim\\desktop\\cryptoviewer\\cryptoviewer\\cryptoviewer.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -88,15 +88,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ethchart.js",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\ethchart.js",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\ethchart.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\ethchart.js",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\ethchart.js",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\ethchart.js",
               "RelativeToolTip": "wwwroot\\js\\ethchart.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -107,21 +107,22 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:55:25.501Z"
+              "WhenOpened": "2024-06-04T19:55:25.501Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BitcChart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\BitcChart.cshtml",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\BitcChart.cshtml",
               "RelativeDocumentMoniker": "Views\\Chart\\BitcChart.cshtml",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\BitcChart.cshtml",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\BitcChart.cshtml",
               "RelativeToolTip": "Views\\Chart\\BitcChart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -130,11 +131,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EthChart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
               "RelativeDocumentMoniker": "Views\\Chart\\EthChart.cshtml",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
               "RelativeToolTip": "Views\\Chart\\EthChart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -143,11 +144,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "price.js",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\price.js",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\price.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\price.js",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\price.js",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\price.js",
               "RelativeToolTip": "wwwroot\\js\\price.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -158,71 +159,76 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:55:21.737Z"
+              "WhenOpened": "2024-06-04T19:55:21.737Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-04T19:55:17.758Z"
+              "WhenOpened": "2024-06-04T19:55:17.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-04T19:55:14.036Z"
+              "WhenOpened": "2024-06-04T19:55:14.036Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ChartController.cs",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\ChartController.cs",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\ChartController.cs",
               "RelativeDocumentMoniker": "Controllers\\ChartController.cs",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\ChartController.cs",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Controllers\\ChartController.cs",
               "RelativeToolTip": "Controllers\\ChartController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T15:46:27.932Z"
+              "WhenOpened": "2024-06-09T15:46:27.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:55:03.834Z"
+              "WhenOpened": "2024-06-04T19:55:03.834Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "btcchart.js",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\btcchart.js",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\btcchart.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\btcchart.js",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\btcchart.js",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\btcchart.js",
               "RelativeToolTip": "wwwroot\\js\\btcchart.js",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-09T15:40:26.259Z",
               "EditorCaption": ""
@@ -232,10 +238,9 @@
               "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\..\\CryptoViewer.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\appsettings.json",
               "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\appsettings.json",
-              "RelativeToolTip": "..\\..\\CryptoViewer.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\appsettings.json",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-06-04T19:55:34.624Z"
             },
@@ -243,59 +248,62 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-04T19:55:39.017Z"
+              "WhenOpened": "2024-06-04T19:55:39.017Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\package.json",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\package.json",
               "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\package.json",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\package.json",
               "RelativeToolTip": "package.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-07T17:39:35.839Z"
+              "WhenOpened": "2024-06-07T17:39:35.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\site.js",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\js\\site.js",
               "RelativeToolTip": "wwwroot\\js\\site.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-09T15:42:38.423Z"
+              "WhenOpened": "2024-06-09T15:42:38.423Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "bundleconfig.json",
-              "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\bundleconfig.json",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\bundleconfig.json",
               "RelativeDocumentMoniker": "bundleconfig.json",
-              "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\bundleconfig.json",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\bundleconfig.json",
               "RelativeToolTip": "bundleconfig.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-07T17:42:34.143Z"
+              "WhenOpened": "2024-06-07T17:42:34.143Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "..\\..\\CryptoViewer.API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Controllers\\WeatherForecastController.cs",
               "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "..\\..\\CryptoViewer.API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Controllers\\WeatherForecastController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T19:54:58.414Z"
             },
@@ -304,10 +312,9 @@
               "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\CryptoViewer.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Program.cs",
               "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Program.cs",
-              "RelativeToolTip": "..\\..\\CryptoViewer.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\Program.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T19:54:54.204Z"
             },
@@ -316,10 +323,9 @@
               "DocumentIndex": 18,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "..\\..\\CryptoViewer.API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\WeatherForecast.cs",
               "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\WeatherForecast.cs",
-              "RelativeToolTip": "..\\..\\CryptoViewer.API\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.API\\WeatherForecast.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T19:54:48.823Z"
             },
@@ -328,10 +334,9 @@
               "DocumentIndex": 19,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.BL\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\CryptoViewer.BL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.BL\\Class1.cs",
               "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.BL\\Class1.cs",
-              "RelativeToolTip": "..\\..\\CryptoViewer.BL\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.BL\\Class1.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T19:54:39.914Z"
             },
@@ -340,10 +345,9 @@
               "DocumentIndex": 20,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\..\\CryptoViewer.DAL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\Class1.cs",
               "ToolTip": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\Class1.cs",
-              "RelativeToolTip": "..\\..\\CryptoViewer.DAL\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\Class1.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T19:54:40.035Z"
             }
