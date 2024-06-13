@@ -1,8 +1,36 @@
 ﻿
-.title{
+.home-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    gap: 50px;
+}
+
+.main-info{
+    width: 600px;
+}
+
+    .main-info h1 {
+        border-right: 5px solid orange;
+    }
+
+.main-info h5{
+    font-size: 15px;
+}
+
+.title {
     font-size: 30px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.title-a{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .home-container, .home-container-b {
@@ -30,20 +58,24 @@
 
     .why-home-container {
         border: 2px solid lightgrey;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
         border-radius: 10px;
         padding: 15px;
         text-align: center;
     }
 
-.why-home-container-b {
-    display: flex;
-    border: 2px solid lightgrey;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-}
+        .why-home-container:hover {
+            box-shadow: white 1px 5px 15px;
+        }
+
+        .why-home-container-b {
+            display: flex;
+            border: 2px solid lightgrey;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
 
     .why-home-container-b h3{
 
@@ -64,10 +96,10 @@
 .info-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .info-container label{
-    width: 800px;
+    max-width: 800px;
 }
