@@ -9,6 +9,7 @@
 
     .nav-item a:hover, .navbar-brand:hover {
         color: black;
+        border-bottom: 5px solid lightgrey;
     }
 
 .navbar-brand img{
