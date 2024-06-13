@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace CryptoViewer.MVC.Features
+namespace CryptoViewer.Tests.Features
 {
     using TechTalk.SpecFlow;
     using System;

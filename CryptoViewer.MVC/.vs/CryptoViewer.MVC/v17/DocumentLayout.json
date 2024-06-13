@@ -1,25 +1,23 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\",
+  "WorkspaceRootPath": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\rasci\\desktop\\sp_galutinis_projektas\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\css\\home\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\css\\home\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{61A6BBB5-A684-471D-B3ED-E06960E9B01A}|..\\CryptoViewer.Tests\\CryptoViewer.Tests.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.tests\\stepdefinitions\\userloginfeaturestepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\rasci\\desktop\\sp_galutinis_projektas\\cryptoviewer\\cryptoviewer.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{61A6BBB5-A684-471D-B3ED-E06960E9B01A}|..\\CryptoViewer.Tests\\CryptoViewer.Tests.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.tests\\features\\login.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\rasci\\desktop\\sp_galutinis_projektas\\cryptoviewer\\cryptoviewer.mvc\\wwwroot\\css\\authentication\\authentication.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:wwwroot\\css\\authentication\\authentication.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\rasci\\desktop\\sp_galutinis_projektas\\cryptoviewer\\cryptoviewer.mvc\\views\\chart\\ethchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\views\\chart\\ethchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:views\\chart\\ethchart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\rasci\\desktop\\sp_galutinis_projektas\\cryptoviewer\\cryptoviewer.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|c:\\users\\kristupas\\desktop\\webfinal\\cryptoviewer\\cryptoviewer.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDC132A-D806-4E4D-B9D6-57270D3ABA47}|CryptoViewer.MVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -30,17 +28,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 179,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Login.feature",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.Tests\\Features\\Login.feature",
+              "RelativeDocumentMoniker": "..\\CryptoViewer.Tests\\Features\\Login.feature",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.Tests\\Features\\Login.feature",
+              "RelativeToolTip": "..\\CryptoViewer.Tests\\Features\\Login.feature",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQWSURBVDhPdVRLb1tFFP7mPnztaydObOcJcWolhDRpVURQAyWNWgItsGlZ0YoFEgseKxCCFWv4AWzYIxAgQVRVlSo1En1IoDRtSUEpRFWUd9I4DztOff269r18c\u002B0oSRGf9dkzZ2Y\u002BnznnzBH4P3zRGMARXxtHcbKZdMg1uFjCVCmJr9IFzg/Cdd2Dgm\u002BQnylBTISH0Kydhakco0WKGXKZKFDwEfLOJObLV/BN5h42nXxtzYNa\u002BwVeNBScNRPoMs5BNd6FppwUEM8qQmlz4UYBEVGFGhNCtLo6vW5UutGglNDvS8GvZLFc9mT2BF8zWzFgjiCjvwdXDAc1M9JX36MnQp0ia\u002BfQZrbgWEOf8KuGb7OYikARXYjrIXTrj7DjJHG/VJQyVcGYIvC8McwNFzkbUaCorf5mXIifx\u002BmWE1jMrWAwOoC34\u002BcYJuBu\u002Bk95SiEPkRmslZcZglVYrmcEPgqbGPSf4ui04F/XayHYbhl\u002BNYBOM46j4T6ciL2AOtrLtO\u002BDTp7BkH8IH4c9g\u002BZ9G6IPmkj4FX/ombqE\u002BLT3Q6zk1rBgLeO3jdtYyK9gPrcIh\u002B7NZhe8I8RuQp/msJszxhlbVQ\u002BBLrKpgopquzbXBNoDLUjbGUykJykyjzup\u002BxjfuoclXv8JBJj5ZhYVhatxkIiQpu2UsVFMYWLzDyQLG8iWLY9WOYd0aRu2U0LMiKA7lEDMFwWzXj0NBMmYHOwKepCeyW8Zv216Z9kWr\u002BlwEyPLT6PRgJebjuNi51s42TQIkzGuQep44dsVXCctUwugP9yDT3rex6stwzgUiiOshRHW6xE1GuEXfnQE2vFm6wj3fIAIbTXI4k7LQdXnVwIKIuoAX87hfKUokoV13FwfR4f5FE41vQSfZuB49DnPq8cMwZXVa5hgTKcy0yg5JabdHUfaGcWveavq4c38Iubsv1kSy\u002BvFTVxekQcmIT3ua\u002BiBrugIqkGWz2Hv6tfXf8fY2g0vtsQyZu0ZaqTkpOrhbLmIuOZHlx7lM0sUnILuU3TRHmhFzsnhFr3N2DsIaUHMsXymMv\u002BAe1jisijdG7hTuopfrIdSaq85vBOqxxnzdejic1r7afGxLoWqKEJ6ItPiU31MUoXZtinmdZ8k7/wlruV/xvfZDSmz95YXyzYsZw1HjQc8LYu0oeJWZCnVEud6YrTJiRTLkF/jp\u002BxVjLHyi/JR7heUhu1KgcHdRK8xx5UZWmXm5PNqkltqkE3gIUrudxQbxe3CHFIs0Br2BCUsiiYZT00sMUnzvOUOGlVZG0dImYElchxblcu4lR/FWG4GKdfrMrs4KCghl/8quWxHWTbZAnp9IVpkV5nmta/zBj/ibukSvn28yr3e/ffjYMd\u002BEhfqwjgf7OConZyGqCRxKVfED5a3/F8A/wKUXZtBUQWfiQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-06-13T14:22:08.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserLoginFeatureStepDefinitions.cs",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.Tests\\StepDefinitions\\UserLoginFeatureStepDefinitions.cs",
+              "RelativeDocumentMoniker": "..\\CryptoViewer.Tests\\StepDefinitions\\UserLoginFeatureStepDefinitions.cs",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.Tests\\StepDefinitions\\UserLoginFeatureStepDefinitions.cs",
+              "RelativeToolTip": "..\\CryptoViewer.Tests\\StepDefinitions\\UserLoginFeatureStepDefinitions.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T14:20:59.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC0AAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-13T12:17:25.618Z",
               "EditorCaption": ""
@@ -49,9 +73,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "EthChart.cshtml",
-              "DocumentMoniker": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
               "RelativeDocumentMoniker": "Views\\Chart\\EthChart.cshtml",
-              "ToolTip": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Chart\\EthChart.cshtml",
               "RelativeToolTip": "Views\\Chart\\EthChart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -62,45 +86,13 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\kristupas\\Desktop\\WebFinal\\CryptoViewer\\CryptoViewer.MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAdAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwCEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-13T16:11:18.002Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 221,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "home.css",
-              "DocumentMoniker": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\css\\Home\\home.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\Home\\home.css",
-              "ToolTip": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\css\\Home\\home.css",
-              "RelativeToolTip": "wwwroot\\css\\Home\\home.css",
-              "ViewState": "AQIAACcAAAAAAAAAAAAiwDQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-13T16:20:01.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Authentication.css",
-              "DocumentMoniker": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\css\\Authentication\\Authentication.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\Authentication\\Authentication.css",
-              "ToolTip": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\wwwroot\\css\\Authentication\\Authentication.css",
-              "RelativeToolTip": "wwwroot\\css\\Authentication\\Authentication.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-13T16:21:31.672Z",
               "EditorCaption": ""
             }
           ]
