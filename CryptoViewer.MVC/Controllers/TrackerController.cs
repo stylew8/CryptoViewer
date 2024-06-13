@@ -2,10 +2,10 @@
 
 namespace CryptoViewer.MVC.Controllers
 {
-    public class TrackerController : Controller
+    public class ProfileController : Controller
     {
-        [Route("/trackers")]
-        public IActionResult Tracker()
+        [Route("/profile")]
+        public IActionResult Profile()
         {
             return View();
         }

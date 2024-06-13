@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CryptoViewer.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85a69033fda2078f9ba475543a61a4caed586489")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f69b263da8bff5bd49038a90ee09471972496cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CryptoViewer.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CryptoViewer.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

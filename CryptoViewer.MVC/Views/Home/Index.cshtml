@@ -2,43 +2,74 @@
     ViewData["Title"] = "Home Page";
 }
 
-<link rel="stylesheet" href="~/css/Tracker's/trackers.css" />
+<link rel="stylesheet" href="~/css/Home/home.css" />
 
-<h1 class="title">Our Tracker's</h1>
+<h1 class="title">Why Choose Our Trackers</h1>
 
-<div class="tracker-container">
-    <div class="crypto-row">
-        <div class="crypto-tracker-container">
-            <img src="~/Images/CryptoLogos/bitcoin.png"/>
-            <a asp-area="" asp-controller="Chart" asp-action="BitcChart"
-               style="border-top: 3px solid orange;">Go to Bitcoin tracker</a>
+<div class="home-container">
+    <div class="home-row">
+        <div class="why-home-container">
+            <h3>What API we use?</h3>
+            <label>
+                We use the Binance API for our trackers because it provides
+                real-time and comprehensive market data, which is essential for
+                accurate and timely trading decisions. Its high reliability and
+                extensive documentation make it a robust tool for integrating
+                cryptocurrency market analysis and automation, ensuring efficient
+                and effective tracking of market trends.
+            </label>
         </div>
-        <div class="crypto-tracker-container">
-            <img src="~/Images/CryptoLogos/ethereum.png" />
-            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
-               style="border-top: 3px solid cornflowerblue;">Go to Etherium tracker</a>
+        <div class="why-home-container">
+            <h3>Why Binance API?</h3>
+            <label>
+                The Binance API is preferred for our trackers due to its robust
+                performance, offering real-time, comprehensive data on cryptocurrency
+                markets. Its ease of integration, extensive documentation, and high
+                reliability ensure seamless, efficient, and accurate tracking and analysis
+                of market trends, which are crucial for informed trading decisions.
+            </label>
         </div>
-        <div class="crypto-tracker-container">
-            <img src="~/Images/CryptoLogos/enjin.png" />
-            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
-               style="border-top: 3px solid violet;">Go to Enjin tracker</a>
+        <div class="why-home-container">
+            <h3>Is it safe?</h3>
+            <label>
+                The Binance API is highly secure, employing advanced encryption and stringent
+                authentication measures to protect user data and transactions. Regular security
+                audits and robust protocols ensure the integrity and confidentiality of the information,
+                making it a trusted choice for integrating cryptocurrency trading applications.
+            </label>
         </div>
     </div>
-    <div class="crypto-row">
-        <div class="crypto-tracker-container">
-            <img src="~/Images/CryptoLogos/nano.png" />
-            <a asp-area="" asp-controller="Chart" asp-action="BitcChart"
-               style="border-top: 3px solid lightblue;">Go to Nano tracker</a>
+</div>
+
+<div class="home-container-b">
+    <div class="home-row-b">
+        <div class="info-container">
+            <img src="~/Images/crypto-coin-calendar.png" />
+            <div class="why-home-container-b">
+
+                <h3>What crypto's' we have?</h3>
+                <label>
+                    Our platform tracks a diverse range of cryptocurrencies, including major assets
+                    like Bitcoin (BTC) and Ethereum (ETH), as well as popular altcoins such as Enjin (ENJ),
+                    Nano (NANO), and tokens from leading exchanges like Binance Coin (BNB) and Huobi Token
+                    (HT). This wide selection ensures comprehensive market coverage, catering to varied
+                    investment interests and strategies.
+                </label>
+            </div>
         </div>
-        <div class="crypto-tracker-container">
-            <img src="~/Images/CryptoLogos/huobi.png" />
-            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
-               style="border-top: 3px solid deepskyblue;">Go to Houbi tracker</a>
-        </div>
-        <div class="crypto-tracker-container">
-            <img src="~/Images/CryptoLogos/binance.png" />
-            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
-               style="border-top: 3px solid black;">Go to Binance tracker</a>
+
+
+        <div class="info-container">
+            <img src="~/Images/star-folder.png" />
+            <div class="why-home-container-b">
+                <h3>Why choose us?</h3>
+                <label>
+                    Our trackers excel by providing real-time, accurate data and insightful analytics,
+                    empowering users to make informed trading decisions. With intuitive interfaces and
+                    customizable features, they ensure a seamless and efficient tracking experience,
+                    tailored to meet the specific needs of both novice and experienced traders.
+                </label>
+            </div>
         </div>
     </div>
 </div>

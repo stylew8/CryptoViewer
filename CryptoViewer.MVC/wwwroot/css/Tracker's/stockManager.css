@@ -1,2 +1,32 @@
 ﻿
-/*dfs*/
+.stock-exchange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgrey;
+    width: fit-content;
+    align-content: center;
+}
+
+.tracker-info h2{
+    font-size:20px;
+}
+
+.tracker-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.crypto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
