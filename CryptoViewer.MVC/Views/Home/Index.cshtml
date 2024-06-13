@@ -2,7 +2,43 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<link rel="stylesheet" href="~/css/Tracker's/trackers.css" />
+
+<h1 class="title">Our Tracker's</h1>
+
+<div class="tracker-container">
+    <div class="crypto-row">
+        <div class="crypto-tracker-container">
+            <img src="~/Images/CryptoLogos/bitcoin.png"/>
+            <a asp-area="" asp-controller="Chart" asp-action="BitcChart"
+               style="border-top: 3px solid orange;">Go to Bitcoin tracker</a>
+        </div>
+        <div class="crypto-tracker-container">
+            <img src="~/Images/CryptoLogos/ethereum.png" />
+            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
+               style="border-top: 3px solid cornflowerblue;">Go to Etherium tracker</a>
+        </div>
+        <div class="crypto-tracker-container">
+            <img src="~/Images/CryptoLogos/enjin.png" />
+            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
+               style="border-top: 3px solid violet;">Go to Enjin tracker</a>
+        </div>
+    </div>
+    <div class="crypto-row">
+        <div class="crypto-tracker-container">
+            <img src="~/Images/CryptoLogos/nano.png" />
+            <a asp-area="" asp-controller="Chart" asp-action="BitcChart"
+               style="border-top: 3px solid lightblue;">Go to Nano tracker</a>
+        </div>
+        <div class="crypto-tracker-container">
+            <img src="~/Images/CryptoLogos/huobi.png" />
+            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
+               style="border-top: 3px solid deepskyblue;">Go to Houbi tracker</a>
+        </div>
+        <div class="crypto-tracker-container">
+            <img src="~/Images/CryptoLogos/binance.png" />
+            <a asp-area="" asp-controller="Chart" asp-action="EthChart"
+               style="border-top: 3px solid black;">Go to Binance tracker</a>
+        </div>
+    </div>
 </div>

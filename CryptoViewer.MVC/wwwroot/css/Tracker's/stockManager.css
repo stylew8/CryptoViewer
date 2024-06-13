@@ -1,0 +1,12 @@
+﻿/*#tvchart {
+    width: 700px;
+    height: 300px;
+}
+*/
+/*.stock-exchange {
+    width: 300px;
+}*/
+
+.crypto-container div tv-lightweight-charts {
+    width: 50%;
+}

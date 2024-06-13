@@ -1,0 +1,53 @@
+﻿* {
+    font-family: Verdana;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.tracker-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.crypto-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.crypto-tracker-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+    .crypto-tracker-container img {
+        width: 250px;
+        border-bottom: 1px solid lightgrey;
+    }
+
+.crypto-tracker-container a{
+    text-align: center;
+    font-size: 17px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+    .crypto-tracker-container a:hover {
+        color: #404040;
+        transition: 0.15s all ease-out;
+        padding: 2px;
+    }

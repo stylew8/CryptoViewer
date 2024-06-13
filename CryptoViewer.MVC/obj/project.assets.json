@@ -5355,19 +5355,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maksim\\.nuget\\packages\\": {}
+    "C:\\Users\\rasci\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
       "projectName": "CryptoViewer.MVC",
-      "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
-      "packagesPath": "C:\\Users\\Maksim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\obj\\",
+      "projectPath": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
+      "packagesPath": "C:\\Users\\rasci\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rasci\\Desktop\\SP_Galutinis_Projektas\\CryptoViewer\\CryptoViewer.MVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Maksim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rasci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5375,6 +5380,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5446,6 +5452,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.27, 6.0.27]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.27, 6.0.27]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.27, 6.0.27]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.27, 6.0.27]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5454,7 +5478,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.421\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.3.24204.13\\RuntimeIdentifierGraph.json"
       }
     }
   }

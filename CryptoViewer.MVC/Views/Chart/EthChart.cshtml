@@ -1,21 +1,15 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ETHEREUM ETHUSDT Chart</title>
-    <style>
-        #tvchart {
-            width: 1500px;
-            height: 600px;
-        }
-    </style>
-</head>
-<body>
+﻿@{
+    ViewData["Title"] = "Etherium tracker";
+}
+
+<link rel="stylesheet" href="~/css/Tracker's/stockManager.css" />
     
+<div class="crypto-container">
     <h2>Ethereum ETHUSDT Chart</h2>
-    <div id="tvchart"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
-    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
-    <script src="~/js/ethchart.js"></script>
-</body>
-</html>
+    <div class="stock-exchange" id="tvchart"></div>
+</div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+<script src="~/js/ethchart.js"></script>
