@@ -1,5 +1,6 @@
-using CryptoViewer.BL.Repositories;
 using CryptoViewer.DAL.Helpers;
+using CryptoViewer.DAL.Repositories;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CryptoViewer.MVC
@@ -22,17 +23,20 @@ namespace CryptoViewer.MVC
             });
             builder.Services.AddTransient<CryptocurrencyRepository>();
 
+            // Add data protection services with default configuration
+            builder.Services.AddDataProtection()
+                .SetApplicationName("CryptoViewer");
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
-            //app.UseHttpsRedirection();
+          //  app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
