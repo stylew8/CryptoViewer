@@ -15,7 +15,7 @@
     margin-top: 50px;
 }
 
-.crypto-row{
+.crypto-row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,16 +38,16 @@
         border-bottom: 1px solid lightgrey;
     }
 
-.crypto-tracker-container a{
-    text-align: center;
-    font-size: 17px;
-    padding: 5px;
-    color: black;
-    text-decoration: none;
-}
-
-    .crypto-tracker-container a:hover {
-        color: #404040;
-        transition: 0.15s all ease-out;
-        padding: 2px;
+    .crypto-tracker-container a {
+        text-align: center;
+        font-size: 17px;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
     }
+
+        .crypto-tracker-container a:hover {
+            color: #404040;
+            transition: 0.15s all ease-out;
+            padding: 2px;
+        }

@@ -1,13 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using CryptoViewer.DAL.Models;
+using CryptoViewer.BL.Repositories;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CryptoViewer.MVC.Controllers
 {
-    public class ProfileController : Controller
+    public class TrackerController : Controller
     {
-        [Route("/profile")]
-        public IActionResult Profile()
+        private readonly CryptocurrencyRepository _repository;
+
+        public TrackerController(CryptocurrencyRepository repository)
         {
-            return View();
+            _repository = repository;
+        }
+
+        [Route("/trackers")]
+        public async Task<IActionResult> Tracker()
+        {
+            IEnumerable<Cryptocurrency> cryptocurrencies = await _repository.GetCryptocurrenciesAsync();
+            return View(cryptocurrencies);
         }
     }
 }

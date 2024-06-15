@@ -1,3 +1,7 @@
+using CryptoViewer.BL.Repositories;
+using CryptoViewer.DAL.Helpers;
+using Microsoft.Extensions.DependencyInjection;
+
 namespace CryptoViewer.MVC
 {
     public class Program
@@ -8,6 +12,15 @@ namespace CryptoViewer.MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Add DbHelper and CryptocurrencyRepository services
+            builder.Services.AddSingleton<IDbHelper, DbHelper>(sp =>
+            {
+                var dbHelper = new DbHelper();
+                DbHelper.ConnString = builder.Configuration.GetConnectionString("DefaultConnection");
+                return dbHelper;
+            });
+            builder.Services.AddTransient<CryptocurrencyRepository>();
 
             var app = builder.Build();
 

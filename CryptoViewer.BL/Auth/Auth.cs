@@ -40,7 +40,7 @@ namespace CryptoViewer.BL.Auth
 
             if (user != null && user.Password == encrypt.HashPassword(password, user.Salt))
             {
-                await Login(user.Id);  // Убедитесь, что здесь правильно используется sessionId
+                await Login(user.Id);  
                 return user.Id;
             }
             throw new AuthorizationException();

@@ -2,10 +2,16 @@
 
 namespace CryptoViewer.MVC.Controllers
 {
-    public class TrackerController : Controller
+    public class ChartController : Controller
     {
-        [Route("/trackers")]
-        public IActionResult Tracker()
+        [Route("/btc")]
+        public IActionResult BitcChart()
+        {
+            return View();
+        }
+
+        [Route("/eth")]
+        public IActionResult EthChart()
         {
             return View();
         }

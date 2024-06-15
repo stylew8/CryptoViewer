@@ -2,16 +2,10 @@
 
 namespace CryptoViewer.MVC.Controllers
 {
-    public class ChartController : Controller
+    public class ProfileController : Controller
     {
-        [Route("/btc")]
-        public IActionResult BitcChart()
-        {
-            return View();
-        }
-
-        [Route("/eth")]
-        public IActionResult EthChart()
+        [Route("/profile")]
+        public IActionResult Profile()
         {
             return View();
         }
