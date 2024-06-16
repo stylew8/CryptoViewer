@@ -11,5 +11,6 @@ namespace CryptoViewer.BL.Crypto.Interface
     {
         Task<IEnumerable<Cryptocurrency>> GetCryptocurrenciesAsync();
         Task AddCryptocurrencyAsync(Cryptocurrency cryptocurrency);
+        Task UpdateCryptocurrencyAsync(Cryptocurrency cryptocurrency);
     }
 }

@@ -74,14 +74,14 @@ namespace CryptoViewer.Tests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User registration successfull")]
-        public void UserRegistrationSuccessfull()
+        [NUnit.Framework.DescriptionAttribute("Successful User Registration")]
+        public void SuccessfulUserRegistration()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User registration successfull", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 2
-this.ScenarioInitialize(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful User Registration", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 3
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -90,17 +90,77 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 3
-testRunner.When("User enters information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
 #line 4
-testRunner.And("User click button Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.Given("a new user with username \"testuser\" and email \"testuser@example.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
-testRunner.Then("User should be registered to system", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.When("the user registers with password \"Test@1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 6
-testRunner.And("Welcome message is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.Then("the user should be successfully registered", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 7
+    testRunner.And("a session should be created for the user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Duplicate Email Registration")]
+        public void DuplicateEmailRegistration()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Duplicate Email Registration", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 9
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 10
+    testRunner.Given("a new user with username \"anotheruser\" and email \"testuser@example.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 11
+    testRunner.When("the user registers with password \"Another@1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 12
+    testRunner.Then("a duplicate email error should be thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Duplicate Username Registration")]
+        public void DuplicateUsernameRegistration()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Duplicate Username Registration", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 14
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 15
+    testRunner.Given("a new user with username \"testuser\" and email \"uniqueuser@example.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 16
+    testRunner.When("the user registers with password \"Unique@1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 17
+    testRunner.Then("a duplicate username error should be thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

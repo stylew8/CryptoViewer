@@ -5,14 +5,11 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using CryptoViewer.DAL.Models;
-using CryptoViewer.DAL.Repositories;
 
 namespace CryptoViewer.MVC.Controllers
 {
     public class TrackerController : Controller
     {
-        private readonly Crypto _repository;
-
         private readonly HttpClient _httpClient;
 
         public TrackerController(HttpClient httpClient)
@@ -48,6 +45,30 @@ namespace CryptoViewer.MVC.Controllers
             {
                 var content = new StringContent(JsonConvert.SerializeObject(model), System.Text.Encoding.UTF8, "application/json");
                 var response = await _httpClient.PostAsync("http://localhost:5004/api/trackers", content);
+                response.EnsureSuccessStatusCode();
+                return RedirectToAction("Tracker");
+            }
+
+            return View(model);
+        }
+
+        [HttpGet]
+        [Route("/trackers/update")]
+        [IgnoreAntiforgeryToken]
+        public async Task<IActionResult> UpdateCryptocurrency()
+        {
+            return View();
+        }
+
+        [HttpPut]
+        [Route("/trackers/update/{id}")]
+        [IgnoreAntiforgeryToken]
+        public async Task<IActionResult> UpdateCryptocurrency(int id, AddCryptocurrencyViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var content = new StringContent(JsonConvert.SerializeObject(model), System.Text.Encoding.UTF8, "application/json");
+                var response = await _httpClient.PutAsync($"http://localhost:5004/api/trackers/{id}", content);
                 response.EnsureSuccessStatusCode();
                 return RedirectToAction("Tracker");
             }

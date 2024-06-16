@@ -20,22 +20,22 @@ namespace CryptoViewer.Tests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("User Login")]
-    public partial class UserLoginFeature
+    [NUnit.Framework.DescriptionAttribute("User Authentication")]
+    public partial class UserAuthenticationFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "Login.feature"
+#line 1 "UserAuth.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "User Login", null, ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "User Authentication", null, ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,7 +80,7 @@ namespace CryptoViewer.Tests.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful login", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 3
+#line 2
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -90,61 +90,57 @@ namespace CryptoViewer.Tests.Features
             else
             {
                 this.ScenarioStart();
+#line 3
+    testRunner.Given("I have valid login credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 4
-    testRunner.Given("a user with username \"testuser\" and password \"password123\" exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.When("I send a POST request to /api/UsersAuth/login with the credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 5
-    testRunner.When("the user attempts to log in with username \"testuser\" and password \"password123\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.Then("I should receive a successful login response with a token", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 6
-    testRunner.Then("the response status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Failed login")]
+        public void FailedLogin()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Failed login", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 7
-    testRunner.And("the response should contain a user ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
             }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login with incorrect password")]
-        public void LoginWithIncorrectPassword()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login with incorrect password", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            else
+            {
+                this.ScenarioStart();
+#line 8
+    testRunner.Given("I have invalid login credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 9
-  this.ScenarioInitialize(scenarioInfo);
+    testRunner.When("I send a POST request to /api/UsersAuth/login with the credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
 #line 10
-    testRunner.Given("a user with username \"testuser\" and password \"password123\" exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 11
-    testRunner.When("the user attempts to log in with username \"testuser\" and password \"wrongpassword\"" +
-                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 12
-    testRunner.Then("the response status should be 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("I should receive an error response indicating incorrect credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login with non-existent username")]
-        public void LoginWithNon_ExistentUsername()
+        [NUnit.Framework.DescriptionAttribute("Successful registration")]
+        public void SuccessfulRegistration()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login with non-existent username", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 15
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful registration", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 12
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -154,11 +150,52 @@ namespace CryptoViewer.Tests.Features
             else
             {
                 this.ScenarioStart();
-#line 16
-    testRunner.When("the user attempts to log in with username \"nonexistent\" and password \"password\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 13
+    testRunner.Given("I have unique registration details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+#line 14
+    testRunner.When("I send a POST request to /api/UsersAuth/register with the details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 15
+    testRunner.Then("I should receive a successful registration response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Failed registration due to existing username")]
+        [NUnit.Framework.TestCaseAttribute("validUser", "validPass123", "valid@mail.com", "success", null)]
+        [NUnit.Framework.TestCaseAttribute("invalidUser", "invalidPass123", "invalid@mail.com", "fail", null)]
+        [NUnit.Framework.TestCaseAttribute("newUser", "newPass123", "newuser@mail.com", "success", null)]
+        [NUnit.Framework.TestCaseAttribute("existingUser", "pass123", "existing@mail.com", "fail", null)]
+        public void FailedRegistrationDueToExistingUsername(string username, string password, string email, string expectedResult, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("Username", username);
+            argumentsOfScenario.Add("Password", password);
+            argumentsOfScenario.Add("Email", email);
+            argumentsOfScenario.Add("ExpectedResult", expectedResult);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Failed registration due to existing username", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 17
-    testRunner.Then("the response status should be 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 18
+    testRunner.Given("I have registration details with an existing username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 19
+    testRunner.When("I send a POST request to /api/UsersAuth/register with the details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 20
+    testRunner.Then("I should receive an error response indicating the username already exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

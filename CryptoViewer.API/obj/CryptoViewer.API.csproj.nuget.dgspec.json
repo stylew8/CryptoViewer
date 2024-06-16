@@ -1,7 +1,24 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
+        "projectName": "CryptoViewer.API",
+        "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
+        "packagesPath": "C:\\Users\\iljao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.API\\obj\\",
+=======
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {}
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
   },
   "projects": {
     "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {
@@ -9,12 +26,28 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
         "projectName": "CryptoViewer.API",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
         "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\obj\\",
+=======
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\obj\\",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\iljao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,20 +55,42 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
                 "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj"
+=======
+<<<<<<< HEAD
+              "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
+                "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj"
+              },
+              "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
+                "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj"
+              },
+              "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+                "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+=======
+              "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
+                "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj"
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
               },
               "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
                 "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj"
               },
+<<<<<<< HEAD
               "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
                 "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+=======
+              "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+                "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
               }
             }
           }
@@ -44,6 +99,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -78,21 +138,55 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+<<<<<<< HEAD
+    "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
+        "projectName": "CryptoViewer.Auth_API",
+        "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
+        "packagesPath": "C:\\Users\\iljao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\obj\\",
+=======
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
         "projectName": "CryptoViewer.Auth_API",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
         "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\obj\\",
+=======
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\obj\\",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\iljao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,6 +194,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -112,6 +207,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -169,21 +269,55 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+<<<<<<< HEAD
+    "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+        "projectName": "CryptoViewer.BL",
+        "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+        "packagesPath": "C:\\Users\\iljao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+=======
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
         "projectName": "CryptoViewer.BL",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
         "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+=======
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\iljao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -191,14 +325,25 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
                 "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+=======
+<<<<<<< HEAD
+              "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+                "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+=======
+              "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+                "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
               }
             }
           }
@@ -207,6 +352,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -238,21 +388,55 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+<<<<<<< HEAD
+    "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+        "projectName": "CryptoViewer.DAL",
+        "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+        "packagesPath": "C:\\Users\\iljao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
+=======
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
         "projectName": "CryptoViewer.DAL",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
         "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
+=======
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\iljao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -260,6 +444,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -272,6 +457,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -303,7 +493,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+>>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
         }
       }
     }
