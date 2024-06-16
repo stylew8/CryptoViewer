@@ -1,27 +1,18 @@
-Feature: Authentication
-  Scenario Outline: Successful login
-    Given I have valid credentials
-    When I POST to /api/auth/login with my credentials
-    Then I should receive a successful response with my user ID
+Feature: User Login
 
-  Scenario Outline: Failed login
-    Given I have invalid credentials
-    When I POST to /api/auth/login with my credentials
-    Then I should receive an invalid login attempt response
+  Scenario: Successful login
+    Given a user with username "testuser" and password "password123" exists
+    When the user attempts to log in with username "testuser" and password "password123"
+    Then the response status should be 200
+    And the response should contain a user ID
 
-  Scenario Outline: Successful registration
-    Given I have valid registration details
-    When I POST to /api/auth/register with my details
-    Then I should receive a successful response with my new user ID
+  Scenario: Login with incorrect password
+    Given a user with username "testuser" and password "password123" exists
+    When the user attempts to log in with username "testuser" and password "wrongpassword"
+    Then the response status should be 400
 
-  Scenario Outline: Failed registration
-    Given I have invalid registration details
-    When I POST to /api/auth/register with my details
-    Then I should receive a registration failure response
 
-Examples:
-  | Username    | Password    | Email                | Address      | FirstName | LastName  | ExpectedResult |
-  | validUser   | validPass   | valid@mail.com       | 123 Street   | John      | Doe       | success        |
-  | invalidUser | invalidPass | invalid@mail.com     | 456 Avenue   | Jane      | Smith     | fail           |
-  | newUser     | newPass     | newuser@mail.com     | 789 Road     | Alice     | Johnson   | success        |
-  |             |             | invalid@address.com  |              | Bob       |           | fail           |
+  Scenario: Login with non-existent username
+    When the user attempts to log in with username "nonexistent" and password "password"
+    Then the response status should be 400
+
