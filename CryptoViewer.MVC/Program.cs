@@ -1,5 +1,6 @@
 using CryptoViewer.DAL.Helpers;
 using CryptoViewer.DAL.Repositories;
+using CryptoViewer.MVC.Helpers;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,9 +12,14 @@ namespace CryptoViewer.MVC
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddHttpClient();
+
+            builder.Services.AddScoped<IApiHelper, ApiHelper>();
+            builder.Services.AddScoped<IWebCookie, WebCookie>();
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             var app = builder.Build();
 

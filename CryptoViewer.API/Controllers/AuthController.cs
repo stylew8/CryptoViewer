@@ -21,7 +21,7 @@ namespace CryptoViewer.API.Controllers
         }
 
         [HttpPost("login")]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             try
@@ -40,11 +40,11 @@ namespace CryptoViewer.API.Controllers
         }
 
         [HttpPost("register")]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            //try
-            //{
+            try
+            {
                 var userId = await _authService.Register(
                     new UserModel
                     {
@@ -69,27 +69,27 @@ namespace CryptoViewer.API.Controllers
                 {
                     return BadRequest("Registration failed.");
                 }
-            //}
-            //catch (DuplicateEmailException)
-            //{
-            //    return BadRequest("Email already exist.");
-            //}
-            //catch (DuplicateUsernameException)
-            //{
-            //    return BadRequest("Username already exist.");
-            //}
-            //catch (CreatingUserDetailsException)
-            //{
-            //    return BadRequest("UserDetails creating is failed.");
-            //}
-            //catch (CreatingUserException)
-            //{
-            //    return BadRequest("User creating is failed.");
-            //}
-            //catch
-            //{
-            //    return BadRequest("Error during registration.");
-            //}
+            }
+            catch (DuplicateEmailException)
+            {
+                return BadRequest("Email already exist.");
+            }
+            catch (DuplicateUsernameException)
+            {
+                return BadRequest("Username already exist.");
+            }
+            catch (CreatingUserDetailsException)
+            {
+                return BadRequest("UserDetails creating is failed.");
+            }
+            catch (CreatingUserException)
+            {
+                return BadRequest("User creating is failed.");
+            }
+            catch
+            {
+                return BadRequest("Error during registration.");
+            }
         }
 
     }

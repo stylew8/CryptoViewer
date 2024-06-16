@@ -9,7 +9,9 @@ namespace CryptoViewer.DAL.Auth.Interfaces
 {
     public interface IDbSessionDAL
     {
+        Task<DbSessionModel?> Get(string sessionId);
         Task<DbSessionModel?> Get(Guid sessionId);
+        Task<DbSessionModel?> Get(int userId);
 
         Task Update(Guid dbSessionID , int userid);
 

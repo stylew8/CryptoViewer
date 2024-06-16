@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CryptoViewer.DAL.Auth.Interfaces;
 using CryptoViewer.DAL.Helpers;
 using CryptoViewer.DAL.Models;
+using MySqlX.XDevAPI;
 
 namespace CryptoViewer.DAL.Auth
 {
@@ -27,10 +28,26 @@ namespace CryptoViewer.DAL.Auth
             await dbHelper.ExecuteAsync(sql, model);
         }
 
+        public async Task<DbSessionModel?> Get(string sessionId)
+        {
+           var x = Guid.Parse(sessionId);
+
+            string sql = @"select DbSessionId, SessionData, Created, LastAccessed, UserId from DbSession where DbSessionID = @sessionId";
+            var sessions = await dbHelper.QueryAsync<DbSessionModel?>(sql, new { sessionId = x });
+            return sessions.FirstOrDefault();
+        }
+
         public async Task<DbSessionModel?> Get(Guid sessionId)
         {
             string sql = @"select DbSessionId, SessionData, Created, LastAccessed, UserId from DbSession where DbSessionID = @sessionId";
             var sessions = await dbHelper.QueryAsync<DbSessionModel?>(sql, new { sessionId });
+            return sessions.FirstOrDefault();
+        }
+
+        public async Task<DbSessionModel?> Get(int userId)
+        {
+            string sql = @"select DbSessionId, SessionData, Created, LastAccessed, UserId from DbSession where UserId = @userId";
+            var sessions = await dbHelper.QueryAsync<DbSessionModel?>(sql, new { userId });
             return sessions.FirstOrDefault();
         }
 

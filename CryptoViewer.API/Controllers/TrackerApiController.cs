@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Net.Mail;
 using CryptoViewer.BL.Crypto.Interface;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CryptoViewer.API.Controllers
 {
@@ -22,6 +23,7 @@ namespace CryptoViewer.API.Controllers
         }
 
         [HttpGet(Name = "GetCryptocurrencies")]
+        [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> GetCryptocurrencies()
         {
             var cryptocurrencies = await _repository.GetCryptocurrenciesAsync();
@@ -42,6 +44,7 @@ namespace CryptoViewer.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> AddCryptocurrency(AddCryptocurrencyViewModel model)
         {
             if (ModelState.IsValid)

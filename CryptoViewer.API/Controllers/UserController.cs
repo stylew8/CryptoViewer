@@ -2,6 +2,7 @@
 using CryptoViewer.Auth_API.Models;
 using CryptoViewer.Auth_API.Models.Dto;
 using CryptoViewer.Auth_API.Repository.IRepository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;

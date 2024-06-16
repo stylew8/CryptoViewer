@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CryptoViewer.BL.General.Interfaces;
 using Microsoft.AspNetCore.Http;
 
-namespace CryptoViewer.BL.General
+namespace CryptoViewer.MVC.Helpers
 {
-    public class WebCookie
+    public class WebCookie : IWebCookie
     {
         IHttpContextAccessor httpContextAccessor;
 

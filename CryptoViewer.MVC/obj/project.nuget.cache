@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YrhKuJf0S8oOWGgqoHE9ob6ZcEOCTo4TCOeMM6K2m5V9zr0ZE66qVGt102osUFjWY3qAGvwaK7FZHqUTJYgqlA==",
+  "dgSpecHash": "8yTHBelECZ88/QxB4j+Y73OBhoAr3UHJZKEg7bsRhpVIW5YTsDU7vV39BmnHEKBa/sChj6Ay6q1DJwNmfOsx+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
   "expectedPackageFiles": [
@@ -45,6 +45,7 @@
     "C:\\Users\\vania\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
     "C:\\Users\\vania\\.nuget\\packages\\microsoft.extensions.hosting\\6.0.1\\microsoft.extensions.hosting.6.0.1.nupkg.sha512",
     "C:\\Users\\vania\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\6.0.0\\microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\vania\\.nuget\\packages\\microsoft.extensions.http\\6.0.0\\microsoft.extensions.http.6.0.0.nupkg.sha512",
     "C:\\Users\\vania\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\vania\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\vania\\.nuget\\packages\\microsoft.extensions.logging.configuration\\6.0.0\\microsoft.extensions.logging.configuration.6.0.0.nupkg.sha512",

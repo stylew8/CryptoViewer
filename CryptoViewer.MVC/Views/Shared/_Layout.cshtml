@@ -32,15 +32,8 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Tracker" asp-action="Tracker">Tracker's'</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Login">Log-In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Registration">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Profile" asp-action="Profile">Profile</a>
-                        </li>
+                        
+                        @await Component.InvokeAsync("MainMenu")
                     </ul>
                 </div>
             </div>
