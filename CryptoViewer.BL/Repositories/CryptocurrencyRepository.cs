@@ -2,10 +2,11 @@
 using CryptoViewer.DAL.Helpers;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CryptoViewer.BL.Repositories.Interfaces;
 
 namespace CryptoViewer.DAL.Repositories
 {
-    public class CryptocurrencyRepository
+    public class CryptocurrencyRepository : ICryptocurrencyRepository
     {
         private readonly IDbHelper _dbHelper;
 

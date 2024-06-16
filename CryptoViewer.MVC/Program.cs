@@ -13,6 +13,7 @@ namespace CryptoViewer.MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddHttpClient();
 
             // Add DbHelper and CryptocurrencyRepository services
             builder.Services.AddSingleton<IDbHelper, DbHelper>(sp =>
