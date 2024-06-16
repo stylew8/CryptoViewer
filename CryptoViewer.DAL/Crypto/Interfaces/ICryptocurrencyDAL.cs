@@ -11,5 +11,6 @@ namespace CryptoViewer.DAL.Crypto.Interfaces
     {
         Task<IEnumerable<Cryptocurrency>> GetCryptocurrenciesAsync();
         Task AddCryptocurrencyAsync(Cryptocurrency cryptocurrency);
+        Task UpdateCryptocurrencyAsync(Cryptocurrency cryptocurrency);
     }
 }

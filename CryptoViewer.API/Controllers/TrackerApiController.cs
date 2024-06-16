@@ -30,7 +30,6 @@ namespace CryptoViewer.API.Controllers
         /// <response code="200">Returns a list of cryptocurrencies.</response>
         /// <response code="500">An error occurred while retrieving the cryptocurrencies.</response>
         [HttpGet(Name = "GetCryptocurrencies")]
-        [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> GetCryptocurrencies()
         {
             var cryptocurrencies = await _repository.GetCryptocurrenciesAsync();
@@ -115,7 +114,7 @@ namespace CryptoViewer.API.Controllers
                 {
                     return NotFound();
                 }
-
+                cryptocurrency.Id = id;
                 cryptocurrency.Name = model.Name;
                 cryptocurrency.LogoPath = model.LogoPath;
                 cryptocurrency.TrackerAction = model.TrackerAction;

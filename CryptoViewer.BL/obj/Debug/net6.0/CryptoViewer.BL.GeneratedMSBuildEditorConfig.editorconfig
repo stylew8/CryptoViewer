@@ -5,13 +5,6 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CryptoViewer.BL
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\iljao\Desktop\CryptoViewer\CryptoViewer.BL\
-=======
-build_property.ProjectDir = C:\Users\micha\OneDrive\Desktop\CryptoViewer\CryptoViewer.BL\
->>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\Maksim\Desktop\CryptoViewer\CryptoViewer\CryptoViewer.BL\
