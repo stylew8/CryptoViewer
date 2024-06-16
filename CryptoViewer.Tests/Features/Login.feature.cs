@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace CryptoViewer.MVC.Features
+namespace CryptoViewer.Tests.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -91,19 +91,13 @@ namespace CryptoViewer.MVC.Features
             {
                 this.ScenarioStart();
 #line 3
-    testRunner.Given("User is on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 4
     testRunner.When("User enters valid username and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 5
+#line 4
     testRunner.And("User clicks on the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 6
-    testRunner.Then("User should be redirected to the dashboard", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 7
-    testRunner.And("a welcome message is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 5
+    testRunner.Then("User should be redirected to the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

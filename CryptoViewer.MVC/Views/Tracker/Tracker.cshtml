@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CryptoViewer.DAL.Models.Cryptocurrency>
+
+@{
+    ViewData["Title"] = "Trackers";
+}
+
+<link rel="stylesheet" href="~/css/Tracker's/trackers.css" />
+
+<h1 class="title">Our Trackers</h1>
+
+<div class="tracker-container">
+    <div class="crypto-row">
+        @foreach (var crypto in Model)
+        {
+            <div class="crypto-tracker-container">
+                <img src="@Url.Content(crypto.LogoPath)" alt="@crypto.Name Logo" />
+                <a asp-area="" asp-controller="Chart" asp-action="@crypto.TrackerAction"
+                   style="border-top: 3px solid @crypto.BorderColor;">Go to @crypto.Name tracker</a>
+            </div>
+        }
+    </div>
+</div>

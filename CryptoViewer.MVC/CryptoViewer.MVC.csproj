@@ -20,6 +20,13 @@
 
   <ItemGroup>
     <Folder Include="Handlers\" />
+    <Folder Include="wwwroot\css\AddCrypto\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoViewer.API\CryptoViewer.API.csproj" />
+    <ProjectReference Include="..\CryptoViewer.BL\CryptoViewer.BL.csproj" />
+    <ProjectReference Include="..\CryptoViewer.DAL\CryptoViewer.DAL.csproj" />
   </ItemGroup>
 
 </Project>

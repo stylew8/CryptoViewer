@@ -1,9 +1,14 @@
 using CryptoViewer.BL.Auth;
 using CryptoViewer.BL.Auth.Interfaces;
+using CryptoViewer.BL.Crypto.Interface;
 using CryptoViewer.DAL;
 using CryptoViewer.DAL.Auth;
 using CryptoViewer.DAL.Auth.Interfaces;
+using CryptoViewer.DAL.Crypto;
+using CryptoViewer.DAL.Crypto.Interfaces;
 using CryptoViewer.DAL.Helpers;
+using CryptoViewer.DAL.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CryptoViewer.API
 {
@@ -17,7 +22,7 @@ namespace CryptoViewer.API
             builder.Services.AddScoped<IAuth, Auth>();
             builder.Services.AddScoped<IEncrypt, Encrypt>();
             builder.Services.AddScoped<IDbSession, DbSession>();
-
+            builder.Services.AddScoped<ICrypto, Crypto>();
 
 
             // DAL
@@ -25,8 +30,11 @@ namespace CryptoViewer.API
             builder.Services.AddScoped<ILoggingService, LoggingService>();
             builder.Services.AddScoped<IAuthDAL, AuthDAL>();
             builder.Services.AddScoped<IDbSessionDAL, DbSessionDAL>();
+            builder.Services.AddScoped<ICryptocurrencyDAL, CryptocurrencyDAL>();
 
+            // Add controllers
             builder.Services.AddControllers();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -40,10 +48,9 @@ namespace CryptoViewer.API
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

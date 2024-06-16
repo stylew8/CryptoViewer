@@ -1,0 +1,84 @@
+﻿
+.profile-title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.container-auth, .container-wallet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+    .container-wallet img{
+        width: 350px;
+    }
+
+    .container-wallet h1 {
+        font-size: 25px;
+        line-height: 3px;
+    }
+
+    .container-wallet h2 {
+        font-size: 20px;
+    }
+
+    .auth-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: fit-content;
+    }
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .form-group input {
+        width: 250px;
+        margin: 0 0 10px 20px;
+        border: 2px solid lightgrey;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .form-group label {
+        text-align: left;
+    }
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+    .form-button input {
+        width: 150px;
+        background-color: white;
+        padding: 5px;
+        border: 2px solid lightgrey;
+        border-radius: 10px;
+    }
+
+        .form-button input:hover {
+            transition: 0.2s ease-out;
+            border: 2px solid #737373;
+        }

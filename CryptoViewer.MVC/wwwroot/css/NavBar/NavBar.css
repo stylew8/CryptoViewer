@@ -1,0 +1,17 @@
+﻿.navbar {
+    background-color: white;
+    height: 60px;
+}
+
+.nav-item a{
+    color: black;
+}
+
+    .nav-item a:hover, .navbar-brand:hover {
+        color: black;
+        border-bottom: 5px solid lightgrey;
+    }
+
+.navbar-brand img{
+    width: 50px;
+}

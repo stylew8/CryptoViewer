@@ -1,8 +1,8 @@
 ﻿const log = console.log;
 
 const chartProperties = {
-    width: 1500,
-    height: 600,
+    width: 900,
+    height: 500,
     timeScale: {
         timeVisible: true,
         secondsVisible: false,

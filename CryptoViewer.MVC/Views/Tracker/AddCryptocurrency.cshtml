@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cryptocurrency</title>
+    <link rel="stylesheet" href="~/css/AddCrypto.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Add Cryptocurrency</h1>
+        <form action="/trackers/add" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" required />
+            </div>
+            <div>
+                <label for="logoPath">Logo Path</label>
+                <input type="text" id="logoPath" name="LogoPath" required />
+            </div>
+            <div>
+                <label for="trackerAction">Tracker Action</label>
+                <input type="text" id="trackerAction" name="TrackerAction" required />
+            </div>
+            <div>
+                <label for="borderColor">Border Color</label>
+                <input type="text" id="borderColor" name="BorderColor" required />
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,22 +1,19 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Binance BTCUSDT Chart</title>
-    <style>
-        #tvchart {
-            width: 1500px;
-            height: 600px;
-        }
-    </style>
-</head>
-<body>
-    <h1 id="stock-price">---</h1>
-    <script src="/js/price.js"></script>
-    <h2>Binance BTCUSDT Chart</h2>
-    <div id="tvchart"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
-    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
-    <script src="~/js/btcchart.js"></script>
-</body>
-</html>
+﻿@{
+    ViewData["Title"] = "Bitcoin tracker";
+}
+
+<link rel="stylesheet" href="~/css/Tracker's/stockManager.css" />
+
+<div class="crypto-container">
+    <div class="tracker-info">
+        <h2>Binance<br /> BTCUSDT <br /> Chart</h2>
+        <h1 id="stock-price">---</h1>
+    </div>
+    <div class="stock-exchange" id="tvchart"></div>
+</div>
+
+<script src="/js/price.js"></script>
+<script src="/js/price.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+<script src="~/js/btcchart.js"></script>
