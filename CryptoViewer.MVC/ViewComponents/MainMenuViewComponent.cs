@@ -26,6 +26,8 @@ namespace CryptoViewer.MVC.ViewComponents
                 session = guid.ToString();
 
                 web.AddSecure("CustomSession", session, 5);
+
+                return View("Index", false);
             }
 
 

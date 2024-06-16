@@ -6,6 +6,7 @@ using CryptoViewer.DAL.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Mysqlx;
 
 namespace CryptoViewer.API.Controllers
 {
@@ -86,28 +87,28 @@ namespace CryptoViewer.API.Controllers
                 }
                 else
                 {
-                    return BadRequest("Registration failed.");
+                    return BadRequest(new RegisterResponseDto() { Error = "Registration failed." });
                 }
             }
             catch (DuplicateEmailException)
             {
-                return BadRequest("Email already exist.");
+                return BadRequest(new RegisterResponseDto() { Error = "Email already exist." });
             }
             catch (DuplicateUsernameException)
             {
-                return BadRequest("Username already exist.");
+                return BadRequest(new RegisterResponseDto() { Error = "Username already exist." });
             }
             catch (CreatingUserDetailsException)
             {
-                return BadRequest("UserDetails creating is failed.");
+                return BadRequest(new RegisterResponseDto() { Error = "UserDetails creating is failed."});
             }
             catch (CreatingUserException)
             {
-                return BadRequest("User creating is failed.");
+                return BadRequest(new RegisterResponseDto() { Error = "User creating is failed." });
             }
             catch
             {
-                return BadRequest("Error during registration.");
+                return BadRequest(new RegisterResponseDto() { Error = "Error during registration." });
             }
         }
 
