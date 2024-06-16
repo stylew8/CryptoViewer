@@ -1,33 +1,70 @@
 using System;
+using System.Threading.Tasks;
 using TechTalk.SpecFlow;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CryptoViewer.BL.Auth.Interfaces;
+using CryptoViewer.BL.Exceptions;
+using CryptoViewer.DAL.Models;
 
-namespace CryptoViewer.MVC.StepDefinitions
+namespace CryptoViewer.Tests.StepDefinitions
 {
     [Binding]
     public class RegistrationSuccessCheckStepDefinitions
     {
-        [When(@"User enters information")]
-        public void WhenUserEntersInformation()
+        private readonly IAuth _auth;
+        private UserModel _user;
+        private UserDetails _userDetails;
+        private Exception? _exception;
+
+        public RegistrationSuccessCheckStepDefinitions(IAuth auth)
         {
-            throw new PendingStepException();
+            _auth = auth;
+            _user = new UserModel();
+            _userDetails = new UserDetails();
         }
 
-        [When(@"User click button Register")]
-        public void WhenUserClickButtonRegister()
+        [Given(@"a new user with username ""([^""]*)"" and email ""([^""]*)""")]
+        public void GivenANewUserWithUsernameAndEmail(string username, string email)
         {
-            throw new PendingStepException();
+            _user.Username = username;
+            _userDetails.Email = email;
+            _userDetails.FirstName = "Test";
+            _userDetails.LastName = "User";
         }
 
-        [Then(@"User should be registered to system")]
-        public void ThenUserShouldBeRegisteredToSystem()
+        [When(@"the user registers with password ""([^""]*)""")]
+        public async Task WhenTheUserRegistersWithPassword(string password)
         {
-            throw new PendingStepException();
+            _user.Password = password;
+
+            try
+            {
+                await _auth.Register(_user, _userDetails);
+            }
+            catch (Exception ex)
+            {
+                _exception = ex;
+            }
         }
 
-        [Then(@"Welcome message is displayed")]
-        public void ThenWelcomeMessageIsDisplayed()
+        [Then(@"the user should be successfully registered")]
+        public void ThenTheUserShouldBeSuccessfullyRegistered()
         {
-            throw new PendingStepException();
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull(_exception);
+        }
+
+        [Then(@"a duplicate email error should be thrown")]
+        public void ThenADuplicateEmailErrorShouldBeThrown()
+        {
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(_exception);
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType(_exception, typeof(DuplicateEmailException));
+        }
+
+        [Then(@"a duplicate username error should be thrown")]
+        public void ThenADuplicateUsernameErrorShouldBeThrown()
+        {
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(_exception);
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType(_exception, typeof(DuplicateUsernameException));
         }
     }
 }
