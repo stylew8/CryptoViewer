@@ -14,6 +14,8 @@ namespace CryptoViewer.BL.Auth.Interfaces
         Task SetUserId(Guid sessionId, int userId);
 
         Task Lock();
+        Task<Guid?> GetSessionId(int userId);
+        Task<bool> IsLoggedIn(string guid);
 
     }
 }

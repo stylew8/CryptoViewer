@@ -42,7 +42,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/kristupas/Desktop/WebFinal/CryptoViewer/CryptoViewer.MVC/Views/Shared/Error.cshtml]
+=======
+[C:/Users/vania/Desktop/CryptoViewer/CryptoViewer.MVC/Views/Shared/Components/MainMenu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWFpbk1lbnVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vania/Desktop/CryptoViewer/CryptoViewer.MVC/Views/Shared/Error.cshtml]
+>>>>>>> f608bbdbe22a1762824463fedd2a72ce43a5c650
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 

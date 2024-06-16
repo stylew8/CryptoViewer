@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -39,6 +40,25 @@ namespace CryptoViewer.BL.Auth
             await sessionDAL.Extend(data.DbSessionId);
             sessionModel = data;
             return data.DbSessionId;
+        }
+
+        public async Task<Guid?> GetSessionId(int userId)
+        {
+            var sessionId = await sessionDAL.Get(userId);
+
+            return sessionId.DbSessionId;
+        }
+
+        public async Task<bool> IsLoggedIn(string guid)
+        {
+            var x = await sessionDAL.Get(guid);
+
+            if (x == null)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         private async Task<DbSessionModel> CreateSession()
