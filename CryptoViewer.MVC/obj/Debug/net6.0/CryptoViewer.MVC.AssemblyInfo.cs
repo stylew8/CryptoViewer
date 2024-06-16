@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CryptoViewer.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96cd35009d6e0152f7edc40d164e614e175a0a79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2255b8e78fb9c676e8888f28a3a11e27ec232ef0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CryptoViewer.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CryptoViewer.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

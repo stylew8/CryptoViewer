@@ -3,6 +3,7 @@ using CryptoViewer.BL.Auth.Interfaces;
 using CryptoViewer.BL.Exceptions;
 using CryptoViewer.DAL.Exceptions;
 using CryptoViewer.DAL.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace CryptoViewer.API.Controllers
         }
 
         [HttpPost("login")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             try
@@ -29,10 +31,7 @@ namespace CryptoViewer.API.Controllers
                 {
                     return Ok(new { UserId = userId });
                 }
-                else
-                {
-                    return Unauthorized();
-                }
+                return BadRequest();
             }
             catch
             {
@@ -41,6 +40,7 @@ namespace CryptoViewer.API.Controllers
         }
 
         [HttpPost("register")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
             //try

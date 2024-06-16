@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.31" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CryptoViewer.Auth_API\CryptoViewer.Auth_API.csproj" />
     <ProjectReference Include="..\CryptoViewer.BL\CryptoViewer.BL.csproj" />
     <ProjectReference Include="..\CryptoViewer.DAL\CryptoViewer.DAL.csproj" />
   </ItemGroup>

@@ -1,3 +1,8 @@
+using System.Text;
+using CryptoViewer.Auth_API;
+using CryptoViewer.Auth_API.Models;
+using CryptoViewer.Auth_API.Repository;
+using CryptoViewer.Auth_API.Repository.IRepository;
 using CryptoViewer.BL.Auth;
 using CryptoViewer.BL.Auth.Interfaces;
 using CryptoViewer.BL.Crypto.Interface;
@@ -8,7 +13,10 @@ using CryptoViewer.DAL.Crypto;
 using CryptoViewer.DAL.Crypto.Interfaces;
 using CryptoViewer.DAL.Helpers;
 using CryptoViewer.DAL.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace CryptoViewer.API
 {
@@ -18,11 +26,14 @@ namespace CryptoViewer.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.Configure<ApiSettings>(builder.Configuration.GetSection("ApiSettings"));
+
             // BL
             builder.Services.AddScoped<IAuth, Auth>();
             builder.Services.AddScoped<IEncrypt, Encrypt>();
             builder.Services.AddScoped<IDbSession, DbSession>();
             builder.Services.AddScoped<ICrypto, Crypto>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 
             // DAL
@@ -31,6 +42,29 @@ namespace CryptoViewer.API
             builder.Services.AddScoped<IAuthDAL, AuthDAL>();
             builder.Services.AddScoped<IDbSessionDAL, DbSessionDAL>();
             builder.Services.AddScoped<ICryptocurrencyDAL, CryptocurrencyDAL>();
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseMySQL(builder.Configuration.GetConnectionString("Authorization")),
+                ServiceLifetime.Scoped);
+
+            var key = builder.Configuration.GetValue<string>("ApiSettings:Secret");
+
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
 
             // Add controllers
             builder.Services.AddControllers();
@@ -48,8 +82,9 @@ namespace CryptoViewer.API
                 app.UseSwaggerUI();
             }
 
-           // app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();

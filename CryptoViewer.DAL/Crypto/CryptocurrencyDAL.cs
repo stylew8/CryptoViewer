@@ -7,8 +7,10 @@ using CryptoViewer.DAL.Crypto.Interfaces;
 using CryptoViewer.DAL.Helpers;
 using CryptoViewer.DAL.Models;
 
+
 namespace CryptoViewer.DAL.Crypto
 {
+    
     public class CryptocurrencyDAL : ICryptocurrencyDAL
     {
         private readonly IDbHelper _dbHelper;

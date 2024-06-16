@@ -13,19 +13,7 @@ namespace CryptoViewer.MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
-            // Add DbHelper and CryptocurrencyRepository services
-            builder.Services.AddSingleton<IDbHelper, DbHelper>(sp =>
-            {
-                var dbHelper = new DbHelper();
-                DbHelper.ConnString = builder.Configuration.GetConnectionString("DefaultConnection");
-                return dbHelper;
-            });
-            builder.Services.AddTransient<Crypto>();
-
-            // Add data protection services with default configuration
-            builder.Services.AddDataProtection()
-                .SetApplicationName("CryptoViewer");
+            builder.Services.AddHttpClient();
 
             var app = builder.Build();
 
@@ -35,8 +23,7 @@ namespace CryptoViewer.MVC
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-
-          //  app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();

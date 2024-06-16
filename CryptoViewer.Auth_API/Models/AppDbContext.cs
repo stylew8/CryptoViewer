@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CryptoViewer.API.Authorization.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CryptoViewer.Auth_API
+namespace CryptoViewer.Auth_API.Models
 {
     public class AppDbContext : DbContext
     {
