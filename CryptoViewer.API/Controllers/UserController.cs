@@ -20,7 +20,16 @@ namespace CryptoViewer.API.Controllers
             this.userRepo = userRepo;
             response = new APIResponse();
         }
-
+        /// <summary>
+        /// Authenticates a user and returns a login response with a token.
+        /// </summary>
+        /// <remarks>
+        /// This method allows a user to log in by providing their credentials. If the login is successful, it returns a JWT token that can be used for authenticated requests.
+        /// </remarks>
+        /// <param name="model">The login request data transfer object containing username and password.</param>
+        /// <response code="200">Returns a login response containing the user details and authentication token</response>
+        /// <response code="400">Returns an error message indicating that the username or password is incorrect</response>
+        /// <response code="500">Returns a general error message indicating an issue with the server</response>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto model)
         {
@@ -40,7 +49,17 @@ namespace CryptoViewer.API.Controllers
 
             return Ok(new{ response.IsSuccess, response.StatusCode, response.Result});
         }
-
+        /// <summary>
+        /// Registers a new user with the provided registration details.
+        /// </summary>
+        /// <remarks>
+        /// This method allows a new user to register by providing their details. If the registration is successful, a confirmation is returned. 
+        /// If the username already exists, or if there is an error during registration, appropriate error messages are returned.
+        /// </remarks>
+        /// <param name="model">The registration request data transfer object containing user details.</param>
+        /// <response code="200">User registered successfully.</response>
+        /// <response code="400">Username already exists or there was an error while registering.</response>
+        /// <response code="500">Oops! Can't register the user right now.</response>
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto model)
         {
