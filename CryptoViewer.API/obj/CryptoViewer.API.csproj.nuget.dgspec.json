@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {}
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
         "projectName": "CryptoViewer.API",
-        "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
-        "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.API\\obj\\",
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +32,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
-                "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj"
+              "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
+                "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj"
               },
-              "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
-                "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj"
+              "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
+                "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj"
               },
-              "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
-                "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+              "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+                "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
               }
             }
           }
@@ -70,6 +74,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -78,21 +100,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
         "projectName": "CryptoViewer.Auth_API",
-        "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
-        "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\obj\\",
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\CryptoViewer.Auth_API.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.Auth_API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -164,26 +190,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
         "projectName": "CryptoViewer.BL",
-        "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
-        "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -197,8 +241,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
-                "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+              "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+                "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
               }
             }
           }
@@ -233,26 +277,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
         "projectName": "CryptoViewer.DAL",
-        "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
-        "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
+        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -298,12 +360,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

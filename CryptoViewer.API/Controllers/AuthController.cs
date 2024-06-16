@@ -19,7 +19,16 @@ namespace CryptoViewer.API.Controllers
         {
             _authService = authService;
         }
-
+        /// <summary>
+        /// Authenticates an admin user and returns their user ID.
+        /// </summary>
+        /// <remarks>
+        /// This method allows an admin user to log in by providing their credentials. If the login is successful, it returns the user's ID.
+        /// </remarks>
+        /// <param name="model">The login request data transfer object containing username and password.</param>
+        /// <response code="200">User authenticated successfully, returns user ID.</response>
+        /// <response code="400">Invalid login attempt.</response>
+        /// <response code="500">An error occurred while processing the login request.</response>
         [HttpPost("login")]
         [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
@@ -38,7 +47,17 @@ namespace CryptoViewer.API.Controllers
                 return BadRequest("Invalid login attempt.");
             }
         }
-
+        /// <summary>
+        /// Registers a new user with the provided registration details.
+        /// </summary>
+        /// <remarks>
+        /// This method allows an admin to register a new user by providing their details. If the registration is successful, a confirmation with the user ID is returned. 
+        /// If there is an error during registration, appropriate error messages are returned.
+        /// </remarks>
+        /// <param name="model">The registration request data transfer object containing user details.</param>
+        /// <response code="200">User registered successfully, returns user ID.</response>
+        /// <response code="400">Registration failed due to invalid input or duplication.</response>
+        /// <response code="500">An error occurred while processing the registration request.</response>
         [HttpPost("register")]
         [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)

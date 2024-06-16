@@ -21,7 +21,14 @@ namespace CryptoViewer.API.Controllers
         {
             _repository = repository;
         }
-
+        /// <summary>
+        /// Retrieves a list of all available cryptocurrencies.
+        /// </summary>
+        /// <remarks>
+        /// This method fetches all the available cryptocurrencies from the repository and returns them as a list of resources.
+        /// </remarks>
+        /// <response code="200">Returns a list of cryptocurrencies.</response>
+        /// <response code="500">An error occurred while retrieving the cryptocurrencies.</response>
         [HttpGet(Name = "GetCryptocurrencies")]
         [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> GetCryptocurrencies()
@@ -30,7 +37,16 @@ namespace CryptoViewer.API.Controllers
             var resources = cryptocurrencies.Select(c => ToResource(c));
             return Ok(resources);
         }
-
+        /// <summary>
+        /// Retrieves a specific cryptocurrency by its unique ID.
+        /// </summary>
+        /// <remarks>
+        /// This method fetches a cryptocurrency from the repository by its ID and returns it as a resource. If the cryptocurrency is not found, a 404 Not Found response is returned.
+        /// </remarks>
+        /// <param name="id">The unique ID of the cryptocurrency to retrieve.</param>
+        /// <response code="200">Returns the cryptocurrency resource.</response>
+        /// <response code="404">Cryptocurrency not found.</response>
+        /// <response code="500">An error occurred while retrieving the cryptocurrency.</response>
         [HttpGet("{id}", Name = "GetCryptocurrency")]
         public async Task<IActionResult> GetCryptocurrency(int id)
         {
@@ -42,7 +58,17 @@ namespace CryptoViewer.API.Controllers
             var resource = ToResource(cryptocurrency);
             return Ok(resource);
         }
-
+        /// <summary>
+        /// Adds a new cryptocurrency to the repository.
+        /// </summary>
+        /// <remarks>
+        /// This method allows an admin to add a new cryptocurrency by providing its details. If the addition is successful, a 201 Created response with the new cryptocurrency is returned. 
+        /// If the model state is invalid, a 400 Bad Request response with the validation errors is returned.
+        /// </remarks>
+        /// <param name="model">The view model containing the cryptocurrency details to be added.</param>
+        /// <response code="201">Cryptocurrency added successfully, returns the created cryptocurrency resource.</response>
+        /// <response code="400">Model state is invalid, returns validation errors.</response>
+        /// <response code="500">An error occurred while adding the cryptocurrency.</response>
         [HttpPost]
         [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> AddCryptocurrency(AddCryptocurrencyViewModel model)
