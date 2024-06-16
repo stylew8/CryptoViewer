@@ -23,9 +23,9 @@ namespace CryptoViewer.API.Controllers
 
         [HttpPost("getSessionIdById")]
         [Authorize(Roles = "admin, user")]
-        public async Task<IActionResult> GetSessionById([FromBody] int userId)
+        public async Task<IActionResult> GetSessionById([FromBody] GetSessionByIdRequest userId)
         {
-            var sessionId = await dbSession.GetSessionId(userId);
+            var sessionId = await dbSession.GetSessionId(userId.userId);
 
             if (sessionId == null)
             {

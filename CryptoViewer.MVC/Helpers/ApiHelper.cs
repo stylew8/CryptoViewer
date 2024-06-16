@@ -71,7 +71,6 @@ namespace CryptoViewer.MVC.Helpers
             var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
             using (var response = await _httpClient.PostAsync(BASE_URL + url, content))
             {
-                response.EnsureSuccessStatusCode();
                 var responseData = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<T>(responseData);
             }
