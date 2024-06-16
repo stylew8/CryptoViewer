@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Cryptocurrency</title>
+</head>
+<body>
+    <h1>Update Cryptocurrency</h1>
+    <form action="https://localhost:7262/trackers" method="put">
+        <input type="hidden" name="_method" value="PUT">
+        <label for="id">Cryptocurrency ID:</label>
+        <input type="text" id="id" name="id" required><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="logoPath">Logo Path:</label>
+        <input type="text" id="logoPath" name="logoPath" required><br><br>
+
+        <label for="trackerAction">Tracker Action:</label>
+        <input type="text" id="trackerAction" name="trackerAction" required><br><br>
+
+        <label for="borderColor">Border Color:</label>
+        <input type="text" id="borderColor" name="borderColor" required><br><br>
+
+        <button type="submit">Update Cryptocurrency</button>
+    </form>
+</body>
+</html>

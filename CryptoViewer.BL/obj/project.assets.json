@@ -2038,23 +2038,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\iljao\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\micha\\.nuget\\packages\\": {},
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
       "projectName": "CryptoViewer.BL",
       "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
       "packagesPath": "C:\\Users\\iljao\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+      "projectName": "CryptoViewer.BL",
+      "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\iljao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2063,14 +2079,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
               "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+=======
+            "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+              "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+>>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
             }
           }
         }
@@ -2115,7 +2137,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   },

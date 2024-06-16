@@ -91,7 +91,44 @@ namespace CryptoViewer.API.Controllers
 
             return BadRequest(ModelState);
         }
+        /// <summary>
+        /// Updates an existing cryptocurrency in the repository.
+        /// </summary>
+        /// <remarks>
+        /// This method allows an admin to update the details of an existing cryptocurrency. If the update is successful, a 200 OK response with the updated cryptocurrency is returned.
+        /// If the cryptocurrency is not found, a 404 Not Found response is returned.
+        /// If the model state is invalid, a 400 Bad Request response with the validation errors is returned.
+        /// </remarks>
+        /// <param name="id">The unique ID of the cryptocurrency to update.</param>
+        /// <param name="model">The view model containing the updated cryptocurrency details.</param>
+        /// <response code="200">Cryptocurrency updated successfully, returns the updated cryptocurrency resource.</response>
+        /// <response code="400">Model state is invalid, returns validation errors.</response>
+        /// <response code="404">Cryptocurrency not found.</response>
+        /// <response code="500">An error occurred while updating the cryptocurrency.</response>
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCryptocurrency(int id, AddCryptocurrencyViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var cryptocurrency = (await _repository.GetCryptocurrenciesAsync()).FirstOrDefault(c => c.Id == id);
+                if (cryptocurrency == null)
+                {
+                    return NotFound();
+                }
 
+                cryptocurrency.Name = model.Name;
+                cryptocurrency.LogoPath = model.LogoPath;
+                cryptocurrency.TrackerAction = model.TrackerAction;
+                cryptocurrency.BorderColor = model.BorderColor;
+
+                await _repository.UpdateCryptocurrencyAsync(cryptocurrency);
+                var resource = ToResource(cryptocurrency);
+
+                return Ok(resource);
+            }
+
+            return BadRequest(ModelState);
+        }
         private CryptocurrencyResource ToResource(Cryptocurrency crypto)
         {
             var resource = new CryptocurrencyResource
@@ -119,5 +156,8 @@ namespace CryptoViewer.API.Controllers
 
             return resource;
         }
+
     }
+
+
 }
