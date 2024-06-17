@@ -1,54 +1,63 @@
-using Newtonsoft.Json;
-using System.Net.Http;
+using System;
+using System.Net;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Net.Http;
+using Newtonsoft.Json;
+using CryptoViewer.Auth_API.Models;
 using CryptoViewer.MVC.Helpers;
-using CryptoViewer.API.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using CryptoViewer.API.Models;
 
-namespace CryptoViewer.Tests.StepDefinitions
+namespace CryptoViewer.Tests.Steps
 {
     [Binding]
-    public class GetCryptocurrenciesStepDefinitions
+    public class TrackerApiSteps
     {
+        private readonly HttpClient _httpClient;
         private readonly ApiHelper _apiHelper;
         private HttpResponseMessage _response;
-        private string _responseContent;
+        private APIResponse _apiResponse;
 
-        public GetCryptocurrenciesStepDefinitions()
+        public TrackerApiSteps()
         {
-            _apiHelper = new ApiHelper(new HttpClient());
+            _httpClient = new HttpClient();
+            _apiHelper = new ApiHelper(_httpClient);
         }
 
         [Given(@"the API is running")]
         public void GivenTheAPIIsRunning()
         {
-            // This step can be used to ensure the API is running. 
-            // For this example, we'll assume the API is running.
+            // Assuming the API is already running and accessible
         }
 
-        [When(@"the user sends a GET request to ""([^""]*)""")]
-        public async Task WhenTheUserSendsAGETRequestTo(string endpoint)
+        [When(@"the user sends a GET request to ""(.*)""")]
+        public async Task WhenTheUserSendsAGETRequestTo(string url)
         {
-            // Get the response from the API
-            _response = await _apiHelper.GetAsync<HttpResponseMessage>(endpoint);
-            // Get the response content as a string
-            _responseContent = await _response.Content.ReadAsStringAsync();
+            // Send the GET request and capture the response
+            _response = await _httpClient.GetAsync(url);
+            _response.EnsureSuccessStatusCode();
+
+            // Deserialize the response content into APIResponse
+            var responseString = await _response.Content.ReadAsStringAsync();
+            _apiResponse = JsonConvert.DeserializeObject<APIResponse>(responseString);
         }
 
         [Then(@"the response status code should be (.*)")]
-        public void ThenTheResponseStatusCodeShouldBe(int expectedStatusCode)
+        public void ThenTheResponseStatusCodeShouldBe(int statusCode)
         {
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(expectedStatusCode, (int)_response.StatusCode, $"Expected status code: {expectedStatusCode}, but got: {(int)_response.StatusCode}");
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual((HttpStatusCode)statusCode, _response.StatusCode);
         }
 
         [Then(@"the response should contain a list of cryptocurrencies")]
         public void ThenTheResponseShouldContainAListOfCryptocurrencies()
         {
-            var cryptocurrencies = JsonConvert.DeserializeObject<List<CryptocurrencyResource>>(_responseContent);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(cryptocurrencies, "Response does not contain a valid list of cryptocurrencies.");
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(cryptocurrencies.Any(), "The list of cryptocurrencies is empty.");
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(_apiResponse.IsSuccess);
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(_apiResponse.Result);
+
+            var cryptocurrencies = JsonConvert.DeserializeObject<List<CryptocurrencyResource>>(_apiResponse.Result.ToString());
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(cryptocurrencies != null && cryptocurrencies.Count > 0);
         }
     }
 }

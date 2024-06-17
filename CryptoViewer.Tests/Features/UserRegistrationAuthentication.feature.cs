@@ -93,29 +93,29 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
   testRunner.Given("John Doe is on the registration page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "field",
                             "value"});
-                table6.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Username",
                             "johndoe"});
-                table6.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Password",
                             "strongpassword123"});
-                table6.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "FirstName",
                             "John"});
-                table6.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "LastName",
                             "Belingham"});
-                table6.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Email",
                             "johnbelinham@gmail.com"});
-                table6.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Address",
                             "Taikos 2"});
 #line 4
-  testRunner.When("he enters the following details:", ((string)(null)), table6, "When ");
+  testRunner.When("he enters the following details:", ((string)(null)), table3, "When ");
 #line hidden
 #line 12
   testRunner.And("he clicks the \"Register\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
