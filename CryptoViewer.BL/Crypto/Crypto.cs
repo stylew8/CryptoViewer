@@ -35,5 +35,10 @@ namespace CryptoViewer.DAL.Repositories
         {
             await crypto.UpdateCryptocurrencyAsync(cryptocurrency);
         }
+
+        public async Task DeleteCryptocurrencyAsync(int id)
+        {
+            await crypto.DeleteCryptocurrencyAsync(id);
+        }
     }
 }

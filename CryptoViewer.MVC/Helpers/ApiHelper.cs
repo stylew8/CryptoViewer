@@ -77,6 +77,10 @@ namespace CryptoViewer.MVC.Helpers
         }
         public async Task<T> PutAsync<T>(string url, object data)
         {
+            if (!IsSettedJWT)
+            {
+                await SetBearerToken();
+            }
             var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
             using (var response = await _httpClient.PutAsync(BASE_URL + url, content))
             {
@@ -84,6 +88,15 @@ namespace CryptoViewer.MVC.Helpers
                 var responseData = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<T>(responseData);
             }
+        }
+        public async Task DeleteAsync(string url)
+        {
+            if (!IsSettedJWT)
+            {
+                await SetBearerToken();
+            }
+            var response = await _httpClient.DeleteAsync(BASE_URL + url);
+            response.EnsureSuccessStatusCode();
         }
     }
 }

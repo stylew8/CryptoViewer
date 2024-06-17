@@ -37,5 +37,12 @@ namespace CryptoViewer.DAL.Crypto
             await _dbHelper.ExecuteAsync(sql, cryptocurrency);
 
         }
+
+        public async Task DeleteCryptocurrencyAsync(int id)
+        {
+            var sql = "DELETE FROM Cryptocurrencies WHERE Id = @Id";
+            await _dbHelper.ExecuteAsync(sql, new { Id = id });
+        }
+
     }
 }

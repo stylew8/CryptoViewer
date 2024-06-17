@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Cryptocurrency</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Delete Cryptocurrency</h2>
+
+        <form action="/trackers/delete" method="post">
+            <div class="form-group">
+                <label for="cryptocurrencyId">Cryptocurrency ID</label>
+                <input type="number" class="form-control" id="cryptocurrencyId" name="id" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+</body>
+</html>

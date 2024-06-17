@@ -25,16 +25,14 @@ namespace CryptoViewer.MVC.Controllers
                 var cryptocurrencies = await _apiHelper.GetAsync<IEnumerable<Cryptocurrency>>("api/TrackerApi");
                 return View(cryptocurrencies);
             }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException)
             {
-                
                 return View("Error");
             }
         }
 
         [HttpGet]
         [Route("/trackers/add")]
-       
         public IActionResult AddCryptocurrency()
         {
             return View();
@@ -42,7 +40,6 @@ namespace CryptoViewer.MVC.Controllers
 
         [HttpPost]
         [Route("/trackers/add")]
-       
         public async Task<IActionResult> AddCryptocurrency(AddCryptocurrencyViewModel model)
         {
             if (ModelState.IsValid)
@@ -56,25 +53,44 @@ namespace CryptoViewer.MVC.Controllers
 
         [HttpGet]
         [Route("/trackers/update")]
-        
-        public async Task<IActionResult> UpdateCryptocurrency()
+        public IActionResult UpdateCryptocurrency()
         {
             return View();
         }
 
         [HttpPost]
         [Route("/trackers/update")]
-        
         public async Task<IActionResult> UpdateCryptocurrency(UpdateCryptocurrencyViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var id = model.Id; 
-                var result = await _apiHelper.PutAsync<AddCryptocurrencyViewModel>($"api/TrackerApi/{id}", model);
+                var id = model.Id;
+                var result = await _apiHelper.PutAsync<UpdateCryptocurrencyViewModel>($"api/TrackerApi/{id}", model);
                 return RedirectToAction("Tracker");
             }
 
             return View(model);
+        }
+        [HttpGet]
+        [Route("/trackers/delete")]
+        public IActionResult DeleteCryptocurrency()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Route("/trackers/delete")]
+        public async Task<IActionResult> DeleteCryptocurrency(int id)
+        {
+            try
+            {
+                await _apiHelper.DeleteAsync($"api/TrackerApi/{id}");
+                return RedirectToAction("Tracker");
+            }
+            catch (HttpRequestException)
+            {
+                return View("Error");
+            }
         }
     }
 }

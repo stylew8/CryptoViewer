@@ -4,15 +4,10 @@ namespace CryptoViewer.MVC.Controllers
 {
     public class ChartController : Controller
     {
-        [Route("/btc")]
-        public IActionResult BitcChart()
+        [Route("/chart/{symbol}")]
+        public IActionResult Chart(string symbol)
         {
-            return View();
-        }
-
-        [Route("/eth")]
-        public IActionResult EthChart()
-        {
+            ViewData["Symbol"] = symbol;
             return View();
         }
     }

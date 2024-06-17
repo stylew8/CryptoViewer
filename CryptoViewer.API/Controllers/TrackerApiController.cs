@@ -105,6 +105,7 @@ namespace CryptoViewer.API.Controllers
         /// <response code="404">Cryptocurrency not found.</response>
         /// <response code="500">An error occurred while updating the cryptocurrency.</response>
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> UpdateCryptocurrency(int id, AddCryptocurrencyViewModel model)
         {
             if (ModelState.IsValid)
@@ -128,6 +129,32 @@ namespace CryptoViewer.API.Controllers
 
             return BadRequest(ModelState);
         }
+
+        /// <summary>
+        /// Deletes an existing cryptocurrency from the repository.
+        /// </summary>
+        /// <remarks>
+        /// This method allows an admin to delete an existing cryptocurrency by its ID. If the deletion is successful, a 204 No Content response is returned.
+        /// If the cryptocurrency is not found, a 404 Not Found response is returned.
+        /// </remarks>
+        /// <param name="id">The unique ID of the cryptocurrency to delete.</param>
+        /// <response code="204">Cryptocurrency deleted successfully.</response>
+        /// <response code="404">Cryptocurrency not found.</response>
+        /// <response code="500">An error occurred while deleting the cryptocurrency.</response>
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
+        public async Task<IActionResult> DeleteCryptocurrency(int id)
+        {
+            var cryptocurrency = (await _repository.GetCryptocurrenciesAsync()).FirstOrDefault(c => c.Id == id);
+            if (cryptocurrency == null)
+            {
+                return NotFound();
+            }
+
+            await _repository.DeleteCryptocurrencyAsync(id);
+            return NoContent();
+        }
+
         private CryptocurrencyResource ToResource(Cryptocurrency crypto)
         {
             var resource = new CryptocurrencyResource
@@ -157,6 +184,4 @@ namespace CryptoViewer.API.Controllers
         }
 
     }
-
-
 }

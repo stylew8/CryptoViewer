@@ -15,8 +15,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Maksim\Desktop\CryptoViewer\CryptoViewer\CryptoViewer.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Maksim/Desktop/CryptoViewer/CryptoViewer/CryptoViewer.MVC/Views/Chart/BitcChart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcQml0Y0NoYXJ0LmNzaHRtbA==
+[C:/Users/Maksim/Desktop/CryptoViewer/CryptoViewer/CryptoViewer.MVC/Views/Chart/Chart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcQ2hhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Maksim/Desktop/CryptoViewer/CryptoViewer/CryptoViewer.MVC/Views/Chart/EthChart.cshtml]
@@ -53,6 +53,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Maksim/Desktop/CryptoViewer/CryptoViewer/CryptoViewer.MVC/Views/Tracker/AddCryptocurrency.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tlclxBZGRDcnlwdG9jdXJyZW5jeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Maksim/Desktop/CryptoViewer/CryptoViewer/CryptoViewer.MVC/Views/Tracker/DeleteCryptocurrency.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tlclxEZWxldGVDcnlwdG9jdXJyZW5jeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Maksim/Desktop/CryptoViewer/CryptoViewer/CryptoViewer.MVC/Views/Tracker/Tracker.cshtml]

@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Crypto Tracker";
+}
+
+<link rel="stylesheet" href="~/css/Tracker's/stockManager.css" />
+
+<div class="crypto-container">
+    <input type="hidden" id="crypto-symbol" value="@ViewData["Symbol"]" />
+    <div class="tracker-info">
+        <h2>Binance<br /> @ViewData["Symbol"] <br /> Chart</h2>
+        <h1 id="stock-price">---</h1>
+    </div>
+    <div class="stock-exchange" id="tvchart"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+<script src="~/js/tracker.js"></script>
