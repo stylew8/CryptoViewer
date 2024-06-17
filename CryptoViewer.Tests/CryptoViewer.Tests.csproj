@@ -35,61 +35,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Features\CryptoAdding.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
-    <Compile Update="Features\CryptoCharts.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
-    <Compile Update="Features\EditContactInformation.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
     <Compile Update="Features\Login.feature.cs">
       <Visible>true</Visible>
       <DependentUpon>%(Filename)</DependentUpon>
       <DesignTime>true</DesignTime>
       <AutoGen>true</AutoGen>
     </Compile>
-    <Compile Update="Features\LoginPageView.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
-    <Compile Update="Features\Logout.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
-    <Compile Update="Features\MainPageView.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
-    <Compile Update="Features\RegisterPageView.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
     <Compile Update="Features\Registration.feature.cs">
-      <Visible>true</Visible>
-      <DependentUpon>%(Filename)</DependentUpon>
-      <DesignTime>true</DesignTime>
-      <AutoGen>true</AutoGen>
-    </Compile>
-    <Compile Update="Features\UserContactInformation.feature.cs">
       <Visible>true</Visible>
       <DependentUpon>%(Filename)</DependentUpon>
       <DesignTime>true</DesignTime>
