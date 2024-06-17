@@ -1,10 +1,12 @@
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CryptoViewer.MVC.Helpers;
-using System.Net;
 
 namespace CryptoViewer.Tests.StepDefinitions
 {
@@ -24,7 +26,7 @@ namespace CryptoViewer.Tests.StepDefinitions
         [Given(@"a user with username ""([^""]*)"" and password ""([^""]*)"" exists")]
         public async Task GivenAUserWithUsernameAndPasswordExists(string username, string password)
         {
-            var registerUrl = "api/auth/register";
+            var registerUrl = "api/Auth/register";
             var registerData = new
             {
                 Username = username,
@@ -56,41 +58,71 @@ namespace CryptoViewer.Tests.StepDefinitions
         public async Task WhenTheUserAttemptsToLogInWithUsernameAndPassword(string username, string password)
         {
             var loginUrl = "api/Auth/login";
-            var loginData = new
+            var loginDataJson = JsonConvert.SerializeObject(new
             {
                 Username = username,
                 Password = password
-            };
+            });
 
             try
             {
-                _response = await _apiHelper.PostAsync<HttpResponseMessage>(loginUrl, loginData);
+                var content = new StringContent(loginDataJson, Encoding.UTF8, "application/json");
+                _response = await _apiHelper.PostAsync<HttpResponseMessage>(loginUrl, content);
                 _responseContent = await _response.Content.ReadAsStringAsync();
+
+                System.Console.WriteLine($"Status Code: {(int)_response.StatusCode}");
+                System.Console.WriteLine($"Response Content: {_responseContent}");
             }
             catch (HttpRequestException ex)
             {
-                _response = new HttpResponseMessage(HttpStatusCode.BadRequest);
-                _responseContent = ex.Message;
+
+                System.Console.WriteLine($"HttpRequestException: {ex.Message}");
+                throw;
             }
         }
 
         [Then(@"the response status should be (.*)")]
         public void ThenTheResponseStatusShouldBe(int statusCode)
         {
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(statusCode, (int)_response.StatusCode, 
-                $"Expected status code {statusCode}, but got {(int)_response.StatusCode}.\nResponse content: {_responseContent}");
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(_response, "Response is null.");
+            if ((int)_response.StatusCode != statusCode)
+            {
+                System.Console.WriteLine($"Actual status code: {(int)_response.StatusCode}, Response content: {_responseContent}");
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail($"Expected status code {statusCode}, but got {(int)_response.StatusCode}.");
+            }
         }
+
 
         [Then(@"the response should contain a user ID")]
         public void ThenTheResponseShouldContainAUserID()
         {
-            var json = JObject.Parse(_responseContent);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(json.ContainsKey("UserId"), $"Response does not contain a user ID. Response content: {_responseContent}");
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(_responseContent, "Response content is null.");
+            System.Console.WriteLine($"Parsing response content: {_responseContent}");
+
+            if (string.IsNullOrEmpty(_responseContent))
+            {
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail("Response content is empty.");
+            }
+
+            try
+            {
+                var json = JObject.Parse(_responseContent);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(json.ContainsKey("UserId"), $"Response does not contain a user ID. Response content: {_responseContent}");
+            }
+            catch (JsonReaderException ex)
+            {
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail($"Error parsing response content: {_responseContent}. Exception: {ex.Message}");
+            }
         }
 
         [Then(@"the response should contain ""([^""]*)""")]
         public void ThenTheResponseShouldContain(string message)
         {
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(_responseContent, "Response content is null.");
+            if (string.IsNullOrEmpty(_responseContent))
+            {
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail("Response content is empty.");
+            }
             Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue(_responseContent.Contains(message),
                 $"Response does not contain expected message: {message}. Response content: {_responseContent}");
         }

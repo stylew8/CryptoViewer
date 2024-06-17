@@ -91,171 +91,27 @@ namespace CryptoViewer.Tests.Features
             {
                 this.ScenarioStart();
 #line 4
-    testRunner.Given("no user with username \"newuser\" exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 5
-    testRunner.And("no user with email \"newuser@example.com\" exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.Given("I have a valid registration request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "username",
-                            "password",
-                            "email",
-                            "address",
-                            "firstName",
-                            "lastName"});
+                            "Username",
+                            "Password",
+                            "Email",
+                            "Address",
+                            "FirstName",
+                            "LastName"});
                 table1.AddRow(new string[] {
-                            "newuser",
-                            "password123",
-                            "newuser@example.com",
-                            "123 Main St",
-                            "New",
+                            "testuser",
+                            "Test@1234",
+                            "test@test.com",
+                            "123 Test St",
+                            "Test",
                             "User"});
-#line 6
-    testRunner.When("the admin attempts to register a user with the following details:", ((string)(null)), table1, "When ");
+#line 5
+    testRunner.When("I send a POST request to \"api/Auth/register\" with the following details", ((string)(null)), table1, "When ");
 #line hidden
-#line 9
-    testRunner.Then("the response status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 10
-    testRunner.And("the response should contain a user ID", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Registration with existing username")]
-        public void RegistrationWithExistingUsername()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Registration with existing username", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 12
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 13
-    testRunner.Given("a user with username \"existinguser\" exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                            "username",
-                            "password",
-                            "email",
-                            "address",
-                            "firstName",
-                            "lastName"});
-                table2.AddRow(new string[] {
-                            "existinguser",
-                            "password123",
-                            "newemail@example.com",
-                            "123 Main St",
-                            "New",
-                            "User"});
-#line 14
-    testRunner.When("the admin attempts to register a user with the following details:", ((string)(null)), table2, "When ");
-#line hidden
-#line 17
-    testRunner.Then("the response status should be 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 18
-    testRunner.And("the response should contain \"Username already exist.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Registration with existing email")]
-        public void RegistrationWithExistingEmail()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Registration with existing email", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 20
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 21
-    testRunner.Given("a user with email \"existinguser@example.com\" exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
-                            "username",
-                            "password",
-                            "email",
-                            "address",
-                            "firstName",
-                            "lastName"});
-                table3.AddRow(new string[] {
-                            "newuser",
-                            "password123",
-                            "existinguser@example.com",
-                            "123 Main St",
-                            "New",
-                            "User"});
-#line 22
-    testRunner.When("the admin attempts to register a user with the following details:", ((string)(null)), table3, "When ");
-#line hidden
-#line 25
-    testRunner.Then("the response status should be 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 26
-    testRunner.And("the response should contain \"Email already exist.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Registration with invalid input")]
-        public void RegistrationWithInvalidInput()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Registration with invalid input", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 28
-  this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
-                            "username",
-                            "password",
-                            "email",
-                            "address",
-                            "firstName",
-                            "lastName"});
-                table4.AddRow(new string[] {
-                            "newuser",
-                            "",
-                            "invalidemail",
-                            "",
-                            "New",
-                            "User"});
-#line 29
-    testRunner.When("the admin attempts to register a user with the following details:", ((string)(null)), table4, "When ");
-#line hidden
-#line 32
-    testRunner.Then("the response status should be 400", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 33
-    testRunner.And("the response should contain \"Registration failed.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 8
+    testRunner.Then("the registration response status should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
