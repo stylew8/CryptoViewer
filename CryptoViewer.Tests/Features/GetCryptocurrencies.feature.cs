@@ -94,7 +94,7 @@ namespace CryptoViewer.Tests.Features
     testRunner.Given("the API is running", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 4
-    testRunner.When("the user sends a GET request to \"api/TrackerApi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("the user sends a GET request to \"http://localhost:5004/api/TrackerApi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 5
     testRunner.Then("the response status code should be 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

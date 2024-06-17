@@ -27,8 +27,7 @@ namespace CryptoViewer.Tests.StepDefinitions
         [Given("John Doe is on the registration page")]
         public void GivenJohnDoeIsOnTheRegistrationPage()
         {
-            // This step can be used to set up any preconditions if necessary.
-            // Currently, it is not doing anything.
+            
         }
 
         [When("he enters the following details:")]
@@ -51,10 +50,10 @@ namespace CryptoViewer.Tests.StepDefinitions
                 var responseContent = await _response.Content.ReadAsStringAsync();
                 Console.WriteLine($"Response Content: {responseContent}");
 
-                // Deserialize the response content to APIResponse object
+                
                 _apiResponse = JsonConvert.DeserializeObject<APIResponse>(responseContent);
 
-                // Ensure the APIResponse fields are set correctly
+                
                 if (_apiResponse == null)
                 {
                     _apiResponse = new APIResponse
@@ -83,7 +82,7 @@ namespace CryptoViewer.Tests.StepDefinitions
         [When(@"he clicks the ""([^""]*)"" button")]
         public void WhenHeClicksTheButton(string register)
         {
-            // This step can simulate a button click if needed, but it's not necessary in this API call context.
+            
         }
 
         [Then(@"he should see a success message saying ""([^""]*)""")]

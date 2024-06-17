@@ -27,8 +27,7 @@ namespace CryptoViewer.Tests.StepDefinitions
         [Given("John Doe is on the login page")]
         public void GivenJohnDoeIsOnTheLoginPage()
         {
-            // This step can be used to set up any preconditions if necessary.
-            // Currently, it is not doing anything.
+           
         }
 
         [When("he enters the following credentials:")]
@@ -47,10 +46,10 @@ namespace CryptoViewer.Tests.StepDefinitions
                 var responseContent = await _response.Content.ReadAsStringAsync();
                 Console.WriteLine($"Response Content: {responseContent}");
 
-                // Deserialize the response content to LoginResponseDto object
+                
                 var loginResponse = JsonConvert.DeserializeObject<LoginResponseDto>(responseContent);
 
-                // Create the APIResponse object
+                
                 _apiResponse = new APIResponse
                 {
                     StatusCode = _response.StatusCode,
@@ -69,7 +68,7 @@ namespace CryptoViewer.Tests.StepDefinitions
         [When(@"he clicks ""([^""]*)"" button")]
         public void WhenHeClicksButton(string login)
         {
-            // This step can simulate a button click if needed, but it's not necessary in this API call context.
+            
         }
 
         [Then(@"he should see a message saying ""([^""]*)""")]
@@ -88,15 +87,15 @@ namespace CryptoViewer.Tests.StepDefinitions
 
                 if (!string.IsNullOrEmpty(expectedMessage))
                 {
-                    // Trim any leading/trailing whitespace from both the expected and actual messages
+                   
                     string trimmedExpectedMessage = expectedMessage.Trim();
                     string actualMessage = "Login successful".Trim();
 
-                    // Debug information: Print ASCII values of both strings
+                   
                     Console.WriteLine("Expected Message ASCII values: " + string.Join(", ", trimmedExpectedMessage.Select(c => (int)c)));
                     Console.WriteLine("Actual Message ASCII values: " + string.Join(", ", actualMessage.Select(c => (int)c)));
 
-                    // Perform the comparison
+                   
                     Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(trimmedExpectedMessage, actualMessage, "The actual message does not match the expected message.");
                 }
             }
@@ -116,8 +115,7 @@ namespace CryptoViewer.Tests.StepDefinitions
         [Then(@"he should be redirected to the dashboard")]
         public void ThenHeShouldBeRedirectedToTheDashboard()
         {
-            // This step can be used to verify redirection to the dashboard if necessary.
-            // Currently, it is a placeholder.
+            
         }
     }
 }

@@ -2038,19 +2038,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kristupas\\.nuget\\packages\\": {}
+    "C:\\Users\\Maksim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+      "projectUniqueName": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
       "projectName": "CryptoViewer.BL",
-      "projectPath": "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
-      "packagesPath": "C:\\Users\\kristupas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.BL\\obj\\",
+      "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj",
+      "packagesPath": "C:\\Users\\Maksim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kristupas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maksim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2064,8 +2064,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
-              "projectPath": "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+            "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+              "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
             }
           }
         }
@@ -2105,26 +2105,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.29, 6.0.29]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.29, 6.0.29]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.29, 6.0.29]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.421\\RuntimeIdentifierGraph.json"
       }
     }
   }

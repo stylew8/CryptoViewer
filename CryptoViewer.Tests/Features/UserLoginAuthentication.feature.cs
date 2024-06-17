@@ -93,17 +93,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
   testRunner.Given("John Doe is on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "field",
                             "value"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Username",
                             "johndoe"});
-                table2.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Password",
                             "strongpassword123"});
 #line 4
-  testRunner.When("he enters the following credentials:", ((string)(null)), table2, "When ");
+  testRunner.When("he enters the following credentials:", ((string)(null)), table3, "When ");
 #line hidden
 #line 8
   testRunner.And("he clicks \"Login\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
