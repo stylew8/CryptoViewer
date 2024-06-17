@@ -1,66 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {}
->>>>>>> beb22ae8a6452fcbee9d1c6ba8698a18b7b14539
+    "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+    "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
         "projectName": "CryptoViewer.DAL",
-<<<<<<< HEAD
-        "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
-        "packagesPath": "C:\\Users\\Maksim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
+        "projectPath": "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
+        "packagesPath": "C:\\Users\\kristupas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kristupas\\Desktop\\webFinal\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Maksim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "projectPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
-        "packagesPath": "C:\\Users\\iljao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iljao\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
-=======
-    "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {}
->>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
-  },
-  "projects": {
-    "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
-        "projectName": "CryptoViewer.DAL",
-<<<<<<< HEAD
-        "projectPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
-        "packagesPath": "C:\\Users\\vania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vania\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
-=======
-        "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj",
-        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\obj\\",
->>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
->>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\vania\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-<<<<<<< HEAD
-          "C:\\Users\\iljao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 987282d27ac92fb0613884055610307fd1d03bfa
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
->>>>>>> beb22ae8a6452fcbee9d1c6ba8698a18b7b14539
+          "C:\\Users\\kristupas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,20 +65,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.421\\RuntimeIdentifierGraph.json"
-=======
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
->>>>>>> 671f8d32d8c6127a684756f0d2d87dc084b4e495
->>>>>>> beb22ae8a6452fcbee9d1c6ba8698a18b7b14539
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
