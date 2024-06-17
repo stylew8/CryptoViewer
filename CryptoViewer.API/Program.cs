@@ -13,6 +13,7 @@ using CryptoViewer.DAL.Crypto;
 using CryptoViewer.DAL.Crypto.Interfaces;
 using CryptoViewer.DAL.Helpers;
 using CryptoViewer.DAL.Repositories;
+using CryptoViewer.DAL.Repositories.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,20 +30,24 @@ namespace CryptoViewer.API
 
             builder.Services.Configure<ApiSettings>(builder.Configuration.GetSection("ApiSettings"));
 
-            // BL
-            builder.Services.AddScoped<IAuth, Auth>();
-            builder.Services.AddScoped<IEncrypt, Encrypt>();
-            builder.Services.AddScoped<IDbSession, DbSession>();
-            builder.Services.AddScoped<ICrypto, Crypto>();
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
-
-
             // DAL
             builder.Services.AddScoped<IDbHelper, DbHelper>();
             builder.Services.AddScoped<ILoggingService, LoggingService>();
             builder.Services.AddScoped<IAuthDAL, AuthDAL>();
             builder.Services.AddScoped<IDbSessionDAL, DbSessionDAL>();
             builder.Services.AddScoped<ICryptocurrencyDAL, CryptocurrencyDAL>();
+            builder.Services.AddScoped<IUserRepositoryDAL, UserRepositoryDAL>();
+
+
+            // BL
+            builder.Services.AddScoped<IAuth, Auth>();
+            builder.Services.AddScoped<IEncrypt, Encrypt>();
+            builder.Services.AddScoped<IDbSession, DbSession>();
+            builder.Services.AddScoped<ICrypto, Crypto>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<BL.Repositories.Interfaces.IUserRepository, BL.Repositories.UserRepository>();
+
+
 
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseMySQL(builder.Configuration.GetConnectionString("Authorization")),

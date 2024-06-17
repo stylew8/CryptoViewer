@@ -14,5 +14,15 @@ namespace CryptoViewer.Auth_API.Models
         public List<string> ErrorMessages;
         public object Result;
 
+        public static APIResponse CreateBadRequest(List<string> errorMessages)
+        {
+            return new APIResponse
+            {
+                IsSuccess = false,
+                StatusCode = HttpStatusCode.BadRequest,
+                ErrorMessages = errorMessages,
+                Result = null
+            };
+        }
     }
 }
