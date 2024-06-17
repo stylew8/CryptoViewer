@@ -31,5 +31,11 @@ namespace CryptoViewer.DAL.Crypto
             var sql = "INSERT INTO Cryptocurrencies (Name, LogoPath, TrackerAction, BorderColor) VALUES (@Name, @LogoPath, @TrackerAction, @BorderColor)";
             await _dbHelper.ExecuteAsync(sql, cryptocurrency);
         }
+        public async Task UpdateCryptocurrencyAsync(Cryptocurrency cryptocurrency)
+        {
+            var sql = "UPDATE Cryptocurrencies SET Name = @Name, LogoPath = @LogoPath, TrackerAction = @TrackerAction, BorderColor = @BorderColor WHERE Id = @Id";
+            await _dbHelper.ExecuteAsync(sql, cryptocurrency);
+
+        }
     }
 }

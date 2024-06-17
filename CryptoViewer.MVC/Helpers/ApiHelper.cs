@@ -8,7 +8,7 @@ namespace CryptoViewer.MVC.Helpers
     public class ApiHelper : IApiHelper
     {
         private readonly HttpClient _httpClient;
-        private const string BASE_URL = "https://localhost:7077/";
+        private const string BASE_URL = "http://localhost:5004/";
 
         private bool IsSettedJWT = false;
 
@@ -71,6 +71,16 @@ namespace CryptoViewer.MVC.Helpers
             var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
             using (var response = await _httpClient.PostAsync(BASE_URL + url, content))
             {
+                var responseData = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<T>(responseData);
+            }
+        }
+        public async Task<T> PutAsync<T>(string url, object data)
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
+            using (var response = await _httpClient.PutAsync(BASE_URL + url, content))
+            {
+                response.EnsureSuccessStatusCode();
                 var responseData = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<T>(responseData);
             }

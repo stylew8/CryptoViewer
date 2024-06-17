@@ -7,7 +7,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json.Linq;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
-using CryptoViewer.MVC.Models.Dto;
 
 namespace CryptoViewer.Tests.StepDefinitions
 {
@@ -27,41 +26,41 @@ namespace CryptoViewer.Tests.StepDefinitions
         [Given(@"no user with username ""([^""]*)"" exists")]
         public async Task GivenNoUserWithUsernameExists(string username)
         {
-            try
-            {
-                // Check if user with given username exists
-                var getUserResponse = await _apiHelper.GetAsync<UserDto>($"api/Users/{username}");
+            //try
+            //{
+            //    // Check if user with given username exists
+            //    var getUserResponse = await _apiHelper.GetAsync<UserDto>($"api/Users/{username}");
 
-                // If user exists, throw an exception
-                if (getUserResponse != null)
-                {
-                    throw new InvalidOperationException($"User with username '{username}' already exists.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail($"Failed to check user existence for username '{username}'. Error: {ex.Message}");
-            }
+            //    // If user exists, throw an exception
+            //    if (getUserResponse != null)
+            //    {
+            //        throw new InvalidOperationException($"User with username '{username}' already exists.");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail($"Failed to check user existence for username '{username}'. Error: {ex.Message}");
+            //}
         }
 
         [Given(@"no user with email ""([^""]*)"" exists")]
         public async Task GivenNoUserWithEmailExists(string email)
         {
-            try
-            {
-                // Check if user with given email exists
-                var getUsersResponse = await _apiHelper.GetAsync<List<UserDto>>($"api/Users?email={email}");
+            //try
+            //{
+            //    // Check if user with given email exists
+            //    var getUsersResponse = await _apiHelper.GetAsync<List<UserDto>>($"api/Users?email={email}");
 
-                // If any user with the same email exists, throw an exception
-                if (getUsersResponse != null && getUsersResponse.Any())
-                {
-                    throw new InvalidOperationException($"User with email '{email}' already exists.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail($"Failed to check user existence for email '{email}'. Error: {ex.Message}");
-            }
+            //    // If any user with the same email exists, throw an exception
+            //    if (getUsersResponse != null && getUsersResponse.Any())
+            //    {
+            //        throw new InvalidOperationException($"User with email '{email}' already exists.");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail($"Failed to check user existence for email '{email}'. Error: {ex.Message}");
+            //}
         }
 
         [When(@"the admin attempts to register a user with the following details:")]

@@ -1,36 +1,40 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CryptoViewer.MVC.Models;
 using System.Collections.Generic;
-using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using CryptoViewer.DAL.Models;
+using CryptoViewer.MVC.Helpers;
 
 namespace CryptoViewer.MVC.Controllers
 {
     public class TrackerController : Controller
     {
-        private readonly HttpClient _httpClient;
+        private readonly IApiHelper _apiHelper;
 
-        public TrackerController(HttpClient httpClient)
+        public TrackerController(IApiHelper apiHelper)
         {
-            _httpClient = httpClient;
+            _apiHelper = apiHelper;
         }
 
         [HttpGet]
         [Route("/trackers")]
         public async Task<IActionResult> Tracker()
         {
-            var response = await _httpClient.GetAsync("http://localhost:5004/api/trackers");
-            response.EnsureSuccessStatusCode();
-            var json = await response.Content.ReadAsStringAsync();
-            var cryptocurrencies = JsonConvert.DeserializeObject<IEnumerable<Cryptocurrency>>(json);
-            return View(cryptocurrencies);
+            try
+            {
+                var cryptocurrencies = await _apiHelper.GetAsync<IEnumerable<Cryptocurrency>>("api/TrackerApi");
+                return View(cryptocurrencies);
+            }
+            catch (HttpRequestException ex)
+            {
+                
+                return View("Error");
+            }
         }
 
         [HttpGet]
         [Route("/trackers/add")]
-        [IgnoreAntiforgeryToken]
+       
         public IActionResult AddCryptocurrency()
         {
             return View();
@@ -38,14 +42,12 @@ namespace CryptoViewer.MVC.Controllers
 
         [HttpPost]
         [Route("/trackers/add")]
-        [IgnoreAntiforgeryToken]
+       
         public async Task<IActionResult> AddCryptocurrency(AddCryptocurrencyViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var content = new StringContent(JsonConvert.SerializeObject(model), System.Text.Encoding.UTF8, "application/json");
-                var response = await _httpClient.PostAsync("http://localhost:5004/api/trackers", content);
-                response.EnsureSuccessStatusCode();
+                var result = await _apiHelper.PostAsync<AddCryptocurrencyViewModel>("api/TrackerApi", model);
                 return RedirectToAction("Tracker");
             }
 
@@ -54,22 +56,21 @@ namespace CryptoViewer.MVC.Controllers
 
         [HttpGet]
         [Route("/trackers/update")]
-        [IgnoreAntiforgeryToken]
+        
         public async Task<IActionResult> UpdateCryptocurrency()
         {
             return View();
         }
 
-        [HttpPut]
-        [Route("/trackers/update/{id}")]
-        [IgnoreAntiforgeryToken]
-        public async Task<IActionResult> UpdateCryptocurrency(int id, AddCryptocurrencyViewModel model)
+        [HttpPost]
+        [Route("/trackers/update")]
+        
+        public async Task<IActionResult> UpdateCryptocurrency(UpdateCryptocurrencyViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var content = new StringContent(JsonConvert.SerializeObject(model), System.Text.Encoding.UTF8, "application/json");
-                var response = await _httpClient.PutAsync($"http://localhost:5004/api/trackers/{id}", content);
-                response.EnsureSuccessStatusCode();
+                var id = model.Id; 
+                var result = await _apiHelper.PutAsync<AddCryptocurrencyViewModel>($"api/TrackerApi/{id}", model);
                 return RedirectToAction("Tracker");
             }
 
