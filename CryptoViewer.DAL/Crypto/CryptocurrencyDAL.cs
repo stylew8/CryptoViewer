@@ -7,10 +7,8 @@ using CryptoViewer.DAL.Crypto.Interfaces;
 using CryptoViewer.DAL.Helpers;
 using CryptoViewer.DAL.Models;
 
-
 namespace CryptoViewer.DAL.Crypto
 {
-    
     public class CryptocurrencyDAL : ICryptocurrencyDAL
     {
         private readonly IDbHelper _dbHelper;
@@ -31,11 +29,11 @@ namespace CryptoViewer.DAL.Crypto
             var sql = "INSERT INTO Cryptocurrencies (Name, LogoPath, TrackerAction, BorderColor) VALUES (@Name, @LogoPath, @TrackerAction, @BorderColor)";
             await _dbHelper.ExecuteAsync(sql, cryptocurrency);
         }
+
         public async Task UpdateCryptocurrencyAsync(Cryptocurrency cryptocurrency)
         {
             var sql = "UPDATE Cryptocurrencies SET Name = @Name, LogoPath = @LogoPath, TrackerAction = @TrackerAction, BorderColor = @BorderColor WHERE Id = @Id";
             await _dbHelper.ExecuteAsync(sql, cryptocurrency);
-
         }
 
         public async Task DeleteCryptocurrencyAsync(int id)
@@ -43,6 +41,5 @@ namespace CryptoViewer.DAL.Crypto
             var sql = "DELETE FROM Cryptocurrencies WHERE Id = @Id";
             await _dbHelper.ExecuteAsync(sql, new { Id = id });
         }
-
     }
 }

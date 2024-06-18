@@ -5,8 +5,15 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace CryptoViewer.Auth_API.Migrations
 {
+    /// <summary>
+    /// Migration to add users table to the database.
+    /// </summary>
     public partial class addUsersToDb : Migration
     {
+        /// <summary>
+        /// Method to apply changes when migrating the database up.
+        /// </summary>
+        /// <param name="migrationBuilder">The migration builder.</param>
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
@@ -30,6 +37,10 @@ namespace CryptoViewer.Auth_API.Migrations
                 .Annotation("MySQL:Charset", "utf8mb4");
         }
 
+        /// <summary>
+        /// Method to revert the changes when rolling back the migration.
+        /// </summary>
+        /// <param name="migrationBuilder">The migration builder.</param>
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

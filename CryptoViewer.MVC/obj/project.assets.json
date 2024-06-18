@@ -8570,19 +8570,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maksim\\.nuget\\packages\\": {}
+    "C:\\Users\\micha\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
       "projectName": "CryptoViewer.MVC",
-      "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
-      "packagesPath": "C:\\Users\\Maksim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.MVC\\obj\\",
+      "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.MVC\\CryptoViewer.MVC.csproj",
+      "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.MVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Maksim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8590,20 +8595,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {
-              "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj"
+            "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj": {
+              "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.API\\CryptoViewer.API.csproj"
             },
-            "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
-              "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj"
+            "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj": {
+              "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.BL\\CryptoViewer.BL.csproj"
             },
-            "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
-              "projectPath": "C:\\Users\\Maksim\\Desktop\\CryptoViewer\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
+            "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj": {
+              "projectPath": "C:\\Users\\micha\\OneDrive\\Desktop\\CryptoViewer\\CryptoViewer.DAL\\CryptoViewer.DAL.csproj"
             }
           }
         }
@@ -8683,7 +8689,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.421\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

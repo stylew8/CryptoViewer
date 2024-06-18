@@ -13,17 +13,27 @@ using CryptoViewer.DAL.Models;
 
 namespace CryptoViewer.BL.Auth
 {
+    /// <summary>
+    /// Manages database sessions for user authentication and authorization.
+    /// </summary>
     public class DbSession : IDbSession
     {
         private readonly IDbSessionDAL sessionDAL;
-
         private DbSessionModel? sessionModel = null;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DbSession"/> class.
+        /// </summary>
+        /// <param name="sessionDal">The data access layer for session operations.</param>
         public DbSession(IDbSessionDAL sessionDal)
         {
             sessionDAL = sessionDal;
         }
 
+        /// <summary>
+        /// Retrieves a session ID. Creates a new session if one does not exist.
+        /// </summary>
+        /// <returns>The session ID.</returns>
         public async Task<Guid> GetSessionId()
         {
             if (sessionModel != null)
@@ -42,6 +52,11 @@ namespace CryptoViewer.BL.Auth
             return data.DbSessionId;
         }
 
+        /// <summary>
+        /// Retrieves the session ID associated with the specified user ID.
+        /// </summary>
+        /// <param name="userId">The ID of the user.</param>
+        /// <returns>The session ID associated with the user, if found; otherwise, <c>null</c>.</returns>
         public async Task<Guid?> GetSessionId(int userId)
         {
             var sessionId = await sessionDAL.Get(userId);
@@ -49,18 +64,22 @@ namespace CryptoViewer.BL.Auth
             return sessionId.DbSessionId;
         }
 
+        /// <summary>
+        /// Checks if a session identified by its GUID is logged in.
+        /// </summary>
+        /// <param name="guid">The GUID of the session to check.</param>
+        /// <returns><c>true</c> if the session is logged in; otherwise, <c>false</c>.</returns>
         public async Task<bool> IsLoggedIn(string guid)
         {
             var x = await sessionDAL.Get(guid);
 
-            if (x == null)
-            {
-                return false;
-            }
-
-            return true;
+            return x != null;
         }
 
+        /// <summary>
+        /// Creates a new session.
+        /// </summary>
+        /// <returns>The created session.</returns>
         private async Task<DbSessionModel> CreateSession()
         {
             var data = new DbSessionModel()
@@ -73,7 +92,11 @@ namespace CryptoViewer.BL.Auth
             return data;
         }
 
-
+        /// <summary>
+        /// Sets the user ID associated with a session.
+        /// </summary>
+        /// <param name="sessionId">The session ID.</param>
+        /// <param name="userId">The user ID to associate with the session.</param>
         public async Task SetUserId(Guid sessionId, int userId)
         {
             var data = await sessionDAL.Get(sessionId);
@@ -84,6 +107,9 @@ namespace CryptoViewer.BL.Auth
             await sessionDAL.Update(data.DbSessionId, userId);
         }
 
+        /// <summary>
+        /// Locks the current session.
+        /// </summary>
         public async Task Lock()
         {
             await GetSessionId();

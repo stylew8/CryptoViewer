@@ -1,11 +1,13 @@
 ﻿using Dapper;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CryptoViewer.DAL.Helpers
 {
     public class DbHelper : IDbHelper
     {
-        public static string ConnString = "";
+        public static string ConnString = ""; // Ensure this is properly initialized with your MySQL connection string
 
         public async Task ExecuteAsync(string sql, object model)
         {
@@ -21,7 +23,6 @@ namespace CryptoViewer.DAL.Helpers
             using (var connection = new MySqlConnection(ConnString))
             {
                 await connection.OpenAsync();
-
                 return await connection.QueryFirstOrDefaultAsync<T>(sql, model);
             }
         }
@@ -31,7 +32,6 @@ namespace CryptoViewer.DAL.Helpers
             using (var connection = new MySqlConnection(ConnString))
             {
                 await connection.OpenAsync();
-
                 return await connection.QueryAsync<T>(sql, model);
             }
         }

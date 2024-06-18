@@ -22,13 +22,23 @@ using Microsoft.OpenApi.Models;
 
 namespace CryptoViewer.API
 {
+    /// <summary>
+    /// The main entry point for the CryptoViewer API application.
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// The main method that initializes and runs the API application.
+        /// </summary>
+        /// <param name="args">Command-line arguments passed to the application.</param>
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Configure ApiSettings from appsettings.json
             builder.Services.Configure<ApiSettings>(builder.Configuration.GetSection("ApiSettings"));
+
+            // Dependency Injection configuration
 
             // DAL
             builder.Services.AddScoped<IDbHelper, DbHelper>();
@@ -38,7 +48,6 @@ namespace CryptoViewer.API
             builder.Services.AddScoped<ICryptocurrencyDAL, CryptocurrencyDAL>();
             builder.Services.AddScoped<IUserRepositoryDAL, UserRepositoryDAL>();
 
-
             // BL
             builder.Services.AddScoped<IAuth, Auth>();
             builder.Services.AddScoped<IEncrypt, Encrypt>();
@@ -47,14 +56,13 @@ namespace CryptoViewer.API
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<BL.Repositories.Interfaces.IUserRepository, BL.Repositories.UserRepository>();
 
-
-
+            // Configure Entity Framework Core with MySQL
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseMySQL(builder.Configuration.GetConnectionString("Authorization")),
                 ServiceLifetime.Scoped);
 
+            // Configure JWT authentication
             var key = builder.Configuration.GetValue<string>("ApiSettings:Secret");
-
             builder.Services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -75,7 +83,7 @@ namespace CryptoViewer.API
             // Add controllers
             builder.Services.AddControllers();
 
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            // Configure Swagger/OpenAPI documentation
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
             {
@@ -83,28 +91,30 @@ namespace CryptoViewer.API
                 {
                     Version = "v1",
                     Title = "API V1",
-                    Description = "API ??? ?????????? ????????"
+                    Description = "API for CryptoViewer application"
                 });
             });
-                var app = builder.Build();
 
-                // Configure the HTTP request pipeline.
-                if (app.Environment.IsDevelopment())
-                {
-                    app.UseSwagger();
-                    app.UseSwaggerUI();
-                }
+            var app = builder.Build();
 
-              //  app.UseHttpsRedirection();
-
-                app.UseAuthentication();
-                app.UseAuthorization();
-
-                app.MapControllers();
-
-                DbHelper.ConnString = app.Configuration["ConnectionStrings:Prod"] ?? "";
-
-                app.Run();
+            // Configure the HTTP request pipeline
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
+
+            //app.UseHttpsRedirection(); // Uncomment if HTTPS redirection is needed
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            // Configure database connection string
+            DbHelper.ConnString = app.Configuration["ConnectionStrings:Prod"] ?? "";
+
+            app.Run();
+        }
     }
-    }
+}
